@@ -4,12 +4,14 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Evryway is currently creating virtual and augmented reality prototypes.
 
-### More Information
+### What does that even mean?
 
-A place to include any other types of information that you'd like to include about yourself.
+All will become clear over the coming weeks and months. If you like the Enterprise holodeck, you'll love the first prototype.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+If you're interested in coming on this journey, say hi!
+
+[hi@evryway.com](mailto:hi@evryway.com)
