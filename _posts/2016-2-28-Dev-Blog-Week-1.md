@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Dev Blog: How to build a holodeck, week one
 category: DevBlog
