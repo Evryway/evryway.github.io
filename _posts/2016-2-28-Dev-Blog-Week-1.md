@@ -15,7 +15,7 @@ Welcome to my "How to build a holodeck - follow along at home with sticky tape a
 [Week one in the real world](https://youtu.be/HlTIzz9toiU)
 {% include youtubep.html id="HlTIzz9toiU" %}
 
-I'm [Tim](https://www.linkedin.com/in/tim-swan-14b1b), and my goal is to build something functionally equivalent to the Star Trek holodeck, constrained by today's obvious technology limitations. That means (as far as I'm aware) no forcefields, no matter projection, no three dimensional holograms. If we take out all the science fiction, what hardware is actually available right now for us to use?
+I'm [Tim](https://www.linkedin.com/in/tim-swan-14b1b), and my goal is to build something functionally equivalent to the Star Trek holodeck, from scratch. I'm constrained by today's obvious technology limitations - that means (as far as I'm aware) no forcefields, no matter projection, no three dimensional holograms. If we take out all the science fiction, what tools are actually available right now for us to use?
 
 
 ## Hardware
