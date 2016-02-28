@@ -103,12 +103,13 @@ I'll be covering the software I'm actually writing in much more detail in future
 ## Progress so far
 
 So far, I've got a project set up that allows me to do the following things:
-- Track the headset inside an area
-- Gaze-tracking activation of unity menu buttons
-- some very basic Unity UI menus for interacting with the project
-- loading an Area Definition File for better tracking accuracy
-- Covered my garage in sticky tape so I know where I am in the real world
-- a VERY long list of things to do.
+
+ -   Track the headset inside an area
+ -   Gaze-tracking activation of unity menu buttons
+ -   some very basic Unity UI menus for interacting with the project
+ -   loading an Area Definition File for better tracking accuracy
+ -   Covered my garage in sticky tape so I know where I am in the real world
+ -   a VERY long list of things to do.
 
 See up top for links to videos of progress so far. 
 
