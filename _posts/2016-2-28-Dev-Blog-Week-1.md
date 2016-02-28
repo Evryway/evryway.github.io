@@ -121,6 +121,3 @@ Yes, this looks rubbish. I am not much of an artist or designer, so the aestheti
 This week, I really need some lessons on how to best create and edit videos on a PC (ideally with free software). If you have got any advice, please share!
 
 
-
-
-
