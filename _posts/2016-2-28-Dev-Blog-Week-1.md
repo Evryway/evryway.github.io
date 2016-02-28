@@ -4,6 +4,7 @@ title: Dev Blog: How to build a holodeck, week one
 category: DevBlog
 tags: DevBlog, weekly
 ---
+# Dev Blog: week one - Building a holodeck
 
 Welcome to my "How to build a holodeck - follow along at home with sticky tape and scissors" dev blog. This is week one, which means we'll be figuring out how to do this (the process) as well as how to do this (the content) as we go. I’m hoping to make this a regular thing - and that really depends on whether there’s enough readers to make it worthwhile. If you like this, share it and tell me!
 
@@ -16,14 +17,13 @@ Welcome to my "How to build a holodeck - follow along at home with sticky tape a
 I'm [Tim](https://www.linkedin.com/in/tim-swan-14b1b), and my goal is to build something functionally equivalent to the Star Trek holodeck, constrained by today's obvious technology limitations. That means (as far as I'm aware) no forcefields, no matter projection, no three dimensional holograms. If we take out all the science fiction, what hardware is actually available right now for us to use?
 
 
-## Holodeck hardware
+## Hardware
 
 We'll need a selection of things to get this working. The first is some form of *display*. The second is some form of *input*. The third is some form of *motion*. That will get us up to the basics. Let's look at our options.
 
 ### Displays
 
-You're most likely staring at this on a screen - a 2D display. While systems like the [CAVE](
-https://en.wikipedia.org/wiki/Cave_automatic_virtual_environment) use 2D displays and are wicked cool, they take a lot of hardware and effort to set up and they’re not terribly portable.
+You're most likely staring at this on a screen - a 2D display. While systems like the [CAVE](https://en.wikipedia.org/wiki/Cave_automatic_virtual_environment) use 2D displays and are wicked cool, they take a lot of hardware and effort to set up and they’re not terribly portable.
 
 There’s a selection of [HMDs](https://en.wikipedia.org/wiki/Head-mounted_display) (Head Mounted Displays) on the market, and have been for many years, but recently there’s a couple of serious contenders that are either on the market or just about to be released. Anyone who’s excited about VR will most likely be aware of them:
 
@@ -60,9 +60,9 @@ Where does that leave us?
 
 What I want is a mobile, positional-tracking-capable, orientation-tracking-capable VR headset. Does such a thing exist?
 
-#### [Project Tango](https://www.google.com/atap/project-tango/).
+#### [Project Tango](https://www.google.com/atap/project-tango/)
 
-This certainly isn’t a consumer-friendly form factor right now - but that’s going to change this year for sure. And the template device for how it looks is most likely going to use some of the technology from [Project Tango] I’ve got a few of the developer tablets, and they’re simply incredible pieces of kit. Paired with a headset like the (Durovis Dive 7)[https://www.durovis.com/product.html?id=5), you’ve got something that’s like Cardboard but the device also has built-in positional tracking.
+This certainly isn’t a consumer-friendly form factor right now - but that’s going to change this year for sure. And the template device for how it looks is most likely going to use some of the technology from [Project Tango] I’ve got a few of the developer tablets, and they’re simply incredible pieces of kit. Paired with a headset like the [Durovis Dive 7](https://www.durovis.com/product.html?id=5), you’ve got something that’s like Cardboard but the device also has built-in positional tracking.
 
 Is it good enough? For getting this project up and running - hell yes!
 
@@ -88,7 +88,7 @@ The other alternative would be to use an omni-directional treadmill, or somethin
 
 For now, I think (for my aims) the Project Tango device is the best solution given all the available constraints - it runs at a pretty decent framerate, it tracks pretty accurately, there’s no cable and it’s super-easy to develop for.
 
-## Holodeck software
+## Software
 
 I’ll be trying to make this as quickly and as dirtily as possible. That means [Unity3D](http://unity3d.com/), with [Visual Studio Community](https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx) and whatever plugins I can get my hands on that mean I don’t have to write things myself.
 
