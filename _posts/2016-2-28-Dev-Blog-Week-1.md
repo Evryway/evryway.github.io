@@ -37,6 +37,10 @@ This is the entry from Oculus, recently purchased by Facebook. There's a lot of 
 
 This is the entry from Valve, partnered with HTC. Valve's recent VR research really pushed global understanding of working with VR. I was lucky enough see some of the GDC talks in 2013 by Michael Abrash and Joe Ludwig which went really deep on the issues with hardware at that time (display resolution, persistence, tracking latency and a whole host of other known problems). Off the back of this research, their Vive (pronounced Vy-ve) headset and Lighthouse tracking solution (combined with a nice long cable) give the Vive the definite edge for how far you can move from your computer.
 
+#### Edit, 29th of Feb - [Playstation VR](https://www.playstation.com/en-gb/explore/ps4/features/playstation-vr/)
+
+Sony. Missed in my hurry yesterday, Sony firmly deserve a spot up here. Their hardware will undoubtedly be consumer friendly, PS4 is my console of choice right now, and they know games (and social) well enough to court some of the best developers in the world. Definitely one to watch, and probably one to buy.
+
 #### [Razer OSVR](http://www.razerzone.com/osvr-hacker-dev-kit)
 
 I love the idea of open standards and multiple manufacturers creating hardware to those standards. Razer's OSVR Hacker Dev Kit is probably about the best available in that space so far, but I'm sure there will be lots of improvements and alternatives in the coming months.
