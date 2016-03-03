@@ -71,6 +71,9 @@ This gives us two primary benefits - firstly, there's very little drift. From th
 
 Secondly, I can specify a real-world origin space, and lock this to a virtual-world origin space. Every time I start the app (and after area localisation is achieved), I'm looking in the same direction from the same point in space, both in the real world and the virtual world. bonus!
 
+![Banana for scale]({{ site.url }}/assets/banana_grid.jpg)
+
+Here you can see (with a *very* small banana for scale - probably the world's worst scale banana) the garage-space grid at ground level.
 I've been using a very scientific method to define the origin of my world - I have put some gaffer tape on the floor with masking tape at one-metre markers.
 When I create my Area Definition, I simply plant my heel at the garage origin, place the tango device on top of my knee, ensure my leg is vertical, and begin recording the area.
 My floor-to-kneetop distance is approximately 0.65m.
@@ -90,6 +93,9 @@ Since last week, I've added the following things:
  - rewrote "all the things" to fix startup timing issues and tango device permission flow
 
 I've had a bit of a stomach bug this week which hasn't helped progress, but it has made me back off working silly hours, which is a definite good thing. Slow and steady, folks - slow and steady.
+
+I grabbed some assets from the Unity Asset store last week (a lovely table and chair
+
 
 ## Help!
 
