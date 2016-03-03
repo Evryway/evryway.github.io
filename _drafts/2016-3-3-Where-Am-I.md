@@ -9,6 +9,11 @@ I'm wearing a VR headset. I can see stuff in the world. Where am I?
 
 This is a pretty complex question, when you start digging into it. Most of the details I'll discuss will be relevant for all the headsets out there on the market, but I'll be mostly focusing on the Tango as that's what I've been working with this week.
 
+## TL;DR
+
+[Week two - the globe, in the holodeck](https://youtu.be/Jo5ajCooYwA)
+{% include youtubep.html id="Jo5ajCooYwA" %}
+
 ## Where am I in the virtual world?
 
 First of all, you need some kind of position and orientation in your virtual space. Think of this as your starting point if you will. If you're a gamer, think of this as your spawning point.
@@ -36,7 +41,7 @@ Of course, the Tango device (and all android devices in general) use different s
 
 ![Tango Frames](https://developers.google.com/project-tango/images/overview/coordinate-systems/tango-frames.png)
 
-This isn't a problem specific to working with Project Tango, by the way. Moving between rendering engines invariably means moving into a new coordinate system, often with the handedness switched. Transporting assets between authoring packages like 3DS Max, Blender or Maya bring the same issues. In typical human fashion, if there's more than one way to do it, you can guarantee that someone has done it that way and believes it's the best wway.
+This isn't a problem specific to working with Project Tango, by the way. Moving between rendering engines invariably means moving into a new coordinate system, often with the handedness switched. Transporting assets between authoring packages like 3DS Max, Blender or Maya brings the same issues. In typical human fashion, if there's more than one way to do it, you can guarantee that someone has done it that way and believes it's the best way.
 
 For the code I'm writing now, I'm going to have to deal with the conversions between the various spaces, but my mental model needs to be consistent, otherwise - well, you end up going crazy and your math breaks. So whenever I discuss positions and rotations, you can assume from this point onwards we're talking about them in the Unity-World coordinate system.
 
@@ -65,11 +70,13 @@ Without having a constant frame of reference, the Tango device also suffers from
 
 #### Area definitions
 
-the Tango SDK provides this ability by using Area Definition Files, and [Area Learning](https://developers.google.com/project-tango/overview/area-learning). Instead of providing a pose relative to the Start-of-Service origin, you have the ability to create an Area Defintion file, tell the Tango service to use that, and you get back a pose relative to the Area Definition origin, as well as the Start-of-Service origin.
+the Tango SDK provides the ability to capture an area by using Area Definition Files, and [Area Learning](https://developers.google.com/project-tango/overview/area-learning). Instead of providing a pose relative to the Start-of-Service origin, you have the ability to create an Area Definition file, tell the Tango service to use that, and you get back a pose relative to the Area Definition origin, as well as the Start-of-Service origin.
 
 This gives us two primary benefits - firstly, there's very little drift. From the numbers I've been looking at in my debug tools, the position and orientation drift is on the order of millimetres when the device is localised to an area. That's pretty darned awesome in terms of tracking accuracy - probably not quite as good as the Vive, but certainly good enough to walk around looking at, under or over things in the virtual scene.
 
-Secondly, I can specify a real-world origin space, and lock this to a virtual-world origin space. Every time I start the app (and after area localisation is achieved), I'm looking in the same direction from the same point in space, both in the real world and the virtual world. bonus!
+Secondly, I can specify a real-world origin space, and lock this to a virtual-world origin space. Every time I start the app, I'm looking in the same direction from the same point in space, both in the real world and the virtual world. bonus!
+
+It can take a little while for the Tango to lock in to the area definition localisation - you can see this happen in this week's video at around 23 seconds - the Area Definition Lock icon goes from red to green, and the world jumps a few feet to the left. Prior to this, the app was using Start_of_Service localised data. After this, it uses Area Definition localised data.
 
 ![Banana for scale]({{ site.url }}/assets/banana_grid.jpg)
 
@@ -79,7 +86,7 @@ When I create my Area Definition, I simply plant my heel at the garage origin, p
 My floor-to-kneetop distance is approximately 0.65m.
 I'm not 100% certain where the exact centre of the device is, but I'm guessing it's between 20 and 50 millimetres below the top edge, so I can confidently say the ADF origin is at  somewhere around (0.0, 0.70, 0.0) in garage-space - give or take a few centimetres in all three axes.
 
-I'm currently using the [Project Tango Explorer app](https://play.google.com/store/apps/details?id=com.projecttango.tangoexplorer) to create the area definitions - I'll be adding this to the holodeck viewer app at some point, as this will become pretty important to do in device in the next phase of the project.
+I'm currently using the [Project Tango Explorer app](https://play.google.com/store/apps/details?id=com.projecttango.tangoexplorer) to create the area definitions - I'll be adding this to the holodeck viewer app at some point, as this will become pretty important to do in-app on-device in the next phase of the project.
 
 ## Progress so far (20160304)
 
@@ -94,8 +101,7 @@ Since last week, I've added the following things:
 
 I've had a bit of a stomach bug this week which hasn't helped progress, but it has made me back off working silly hours, which is a definite good thing. Slow and steady, folks - slow and steady.
 
-I grabbed some assets from the Unity Asset store last week (a lovely table and chair
-
+I grabbed some assets from the Unity Asset store last week (a lovely table and chair and a fridge) and this week I've grabbed [Planet Earth](https://www.assetstore.unity3d.com/en/#!/content/23399) to drop in my environment.
 
 ## Help!
 
