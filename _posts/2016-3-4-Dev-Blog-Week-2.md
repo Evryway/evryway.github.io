@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Where am I
+title: Dev Blog - How to build a holodeck, week two
 category: DevBlog
 tags: DevBlog, weekly
 ---
@@ -24,6 +24,8 @@ First of all, you need some kind of position and orientation in your virtual spa
 Most games will pop you into the world at a pre-defined point, and many let you specify a point that you'll arrive at or respawn at if you die. There's often a real-world metaphor that translates into selecting and anchoring your start position in the virtual world, for example sleeping in a bed in Minecraft or Terraria.
 
 For my virtual world, I'll be starting with the Unity scene origin as my world origin - the point in space that maps to (0,0,0). This means the point in the world at 0 metres down each of the X,Y and Z axes. I'll also be starting with the assumption that I should be pointing "forward" in the scene. This means pointing down the Z axis in the Unity scene.
+
+In the future, we'll look at arrival points, transit between these points and more - but that's a long way off yet.
 
 #### Coordinate Systems
 
@@ -55,7 +57,7 @@ Moving between these various frames of reference is another transformation of th
 
 The Tango SDK provides a set of [frame of reference pairs](https://developers.google.com/project-tango/overview/frames-of-reference) which allow you to understand where something is relative to. The target frame is where something *is* and the base frame is where something is *relative to*.
 
-## That's great! so, where am I?
+## That's great! so, where am I in the real world?
 
 As I move and rotate my device around in the real world, the information for position and rotation come back to me as a [Tango Pose](https://developers.google.com/project-tango/overview/poses). There's two primary base frames that matter - the "Start of Service" frame and the "Area Definition" frame.
 
@@ -103,9 +105,18 @@ I've had a bit of a stomach bug this week which hasn't helped progress, but it h
 
 I grabbed some assets from the Unity Asset store last week (a lovely table and chair and a fridge) and this week I've grabbed [Planet Earth](https://www.assetstore.unity3d.com/en/#!/content/23399) to drop in my environment.
 
+## Reference links
+
+[Unity Matrix programming examples](http://catlikecoding.com/unity/tutorials/rendering/part-1/)
+[Android sensors overview](http://developer.android.com/guide/topics/sensors/sensors_overview.html)
+
 ## Help!
 
 I've got a plan of attack which roughly maps out what I'm hoping to achieve next. There's a lot on there - prettier content, capture of real world environments into the holo space, speech and gesture recognition, networking, avatars. If you have feedback (or advice!) on any of these areas, drop me a mail, I'd love to know what people think is the most important next steps.
+
+## Next week ...
+
+We'll take a look at cameras, and start exploring environment capture.
 
 
 
