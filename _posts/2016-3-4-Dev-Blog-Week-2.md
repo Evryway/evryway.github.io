@@ -47,7 +47,7 @@ This isn't a problem specific to working with Project Tango, by the way. Moving 
 
 For the code I'm writing now, I'm going to have to deal with the conversions between the various spaces, but my mental model needs to be consistent, otherwise - well, you end up going crazy and your math breaks. So whenever I discuss positions and rotations, you can assume from this point onwards we're talking about them in the Unity-World coordinate system.
 
-Before I stop talking about coordinate systems, though, it's worth pointing out that I've spent three days this week simply trying to understand (and in a few places, correct) the math that drives the Project Tango Unity examples. It's complicated (and it needs to be!) and if there's one thing that's true, it's that humans are not, by and large, built to mentally model three-dimensional translations between coordinate systems. If you've ever stood in a room twisting your fingers around imaginary objects while pointing at the sky with your thumb, then welcome to my world!
+Before I stop talking about coordinate systems, though, it's worth pointing out that I've spent three days this week simply trying to understand (and in a few places, modify) the math that drives the Project Tango Unity examples. It's complicated to me (and I guess it needs to be!) If there's one thing that's true, it's that humans are not, by and large, built to mentally model three-dimensional translations between coordinate systems. If you've ever stood in a room twisting your fingers around imaginary objects while pointing at the sky with your thumb, then welcome to my world!
 
 #### Frames of reference
 
@@ -108,11 +108,12 @@ I grabbed some assets from the Unity Asset store last week (a lovely table and c
 ## Reference links
 
 [Unity Matrix programming examples](http://catlikecoding.com/unity/tutorials/rendering/part-1/)
+
 [Android sensors overview](http://developer.android.com/guide/topics/sensors/sensors_overview.html)
 
 ## Help!
 
-I've got a plan of attack which roughly maps out what I'm hoping to achieve next. There's a lot on there - prettier content, capture of real world environments into the holo space, speech and gesture recognition, networking, avatars. If you have feedback (or advice!) on any of these areas, drop me a mail, I'd love to know what people think is the most important next steps.
+I've got a plan of attack which roughly maps out what I'm hoping to achieve next. There's a lot on there - prettier content, capture of real world environments into the holo space, speech and gesture recognition, networking, avatars. If you have feedback (or advice!) on any of these areas, drop me a mail, I'd love to know what people think they'd like to see next.
 
 ## Next week ...
 
