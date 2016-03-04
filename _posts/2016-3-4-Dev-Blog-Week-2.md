@@ -39,7 +39,7 @@ Unfortunately, the specifics of "the coordinate system" cause all kinds of probl
 
 Unity uses what's called a Left-handed coordinate system, with the positive X axis aligned to "right", positive Y axis aligned to "up", and positive Z axis aligned to "forward". All very sensible if you ask me. If we just stay in that space, then it's pretty clear that the position (2,5,10) means somewhere that's 2 metres to the right, 5 metres up and 10 metres forward from the scene origin.
 
-Of course, the Tango device (and all android devices in general) use different systems to describe a selection of coordinate spaces, and the [Tango has a LOT of coordinate systems](https://developers.google.com/project-tango/overview/coordinate-systems). There's the Device space (positions and rotations relative to the device). There's the Area Definition space. There's the Start_of_Service space. There's the IMU space (where the motion sensors "live"). Most of these spaces do *not* share the same coordinate system. Most of these are right-handed, but they nearly all disagree on which direction "up" is.
+Of course, the Tango device (and all android devices in general) use different systems to describe a selection of coordinate spaces, and the [Tango has a LOT of coordinate systems](https://developers.google.com/project-tango/overview/coordinate-systems). There's the Device space (positions and rotations relative to the device). There's the Area_Description space. There's the Start_of_Service space. There's the IMU space (where the motion sensors "live"). Most of these spaces do *not* share the same coordinate system. Most of these are right-handed, but they nearly all disagree on which direction "up" is.
 
 ![Tango Frames](https://developers.google.com/project-tango/images/overview/coordinate-systems/tango-frames.png)
 
@@ -59,7 +59,7 @@ The Tango SDK provides a set of [frame of reference pairs](https://developers.go
 
 ## That's great! so, where am I in the real world?
 
-As I move and rotate my device around in the real world, the information for position and rotation come back to me as a [Tango Pose](https://developers.google.com/project-tango/overview/poses). There's two primary base frames that matter - the "Start of Service" frame and the "Area Definition" frame.
+As I move and rotate my device around in the real world, the information for position and rotation come back to me as a [Tango Pose](https://developers.google.com/project-tango/overview/poses). There's two primary base frames that matter - the "Start of Service" frame and the "Area Description" frame.
 
 By default, the Tango device will begin with an origin in world space of where the app initially starts. If I start the app standing in the doorway to my garage - that's 0,0,0. If I close it, walk over to the middle of my garage and start it up again - that's now 0,0,0. There's no relationship between these two real-world spaces as far as the Tango device is concerned. This means that my Virtual world will re-centre itself each and every time I restart the device.
 
@@ -70,25 +70,25 @@ Without having a constant frame of reference, the Tango device also suffers from
 
 ![Drift correction](https://developers.google.com/project-tango/images/overview/Drift_Correction.png)
 
-#### Area definitions
+#### Area Descriptions
 
-the Tango SDK provides the ability to capture an area by using Area Definition Files, and [Area Learning](https://developers.google.com/project-tango/overview/area-learning). Instead of providing a pose relative to the Start-of-Service origin, you have the ability to create an Area Definition file, tell the Tango service to use that, and you get back a pose relative to the Area Definition origin, as well as the Start-of-Service origin.
+the Tango SDK provides the ability to capture an area by using Area Description Files, and [Area Learning](https://developers.google.com/project-tango/overview/area-learning). Instead of providing a pose relative to the Start-of-Service origin, you have the ability to create an Area Description file, tell the Tango service to use that, and you get back a pose relative to the Area Description origin, as well as the Start-of-Service origin.
 
 This gives us two primary benefits - firstly, there's very little drift. From the numbers I've been looking at in my debug tools, the position and orientation drift is on the order of millimetres when the device is localised to an area. That's pretty darned awesome in terms of tracking accuracy - probably not quite as good as the Vive, but certainly good enough to walk around looking at, under or over things in the virtual scene.
 
 Secondly, I can specify a real-world origin space, and lock this to a virtual-world origin space. Every time I start the app, I'm looking in the same direction from the same point in space, both in the real world and the virtual world. bonus!
 
-It can take a little while for the Tango to lock in to the area definition localisation - you can see this happen in this week's video at around 23 seconds - the Area Definition Lock icon goes from red to green, and the world jumps a few feet to the left. Prior to this, the app was using Start_of_Service localised data. After this, it uses Area Definition localised data.
+It can take a little while for the Tango to lock in to the area description localisation - you can see this happen in this week's video at around 23 seconds - the Area Description Lock icon goes from red to green, and the world jumps a few feet to the left. Prior to this, the app was using Start_of_Service localised data. After this, it uses Area Description localised data.
 
 ![Banana for scale]({{ site.url }}/assets/banana_grid.jpg)
 
 Here you can see (with a *very* small banana for scale - probably the world's worst scale banana) the garage-space grid at ground level.
 I've been using a very scientific method to define the origin of my world - I have put some gaffer tape on the floor with masking tape at one-metre markers.
-When I create my Area Definition, I simply plant my heel at the garage origin, place the tango device on top of my knee, ensure my leg is vertical, and begin recording the area.
+When I create my Area Description, I simply plant my heel at the garage origin, place the tango device on top of my knee, ensure my leg is vertical, and begin recording the area.
 My floor-to-kneetop distance is approximately 0.65m.
 I'm not 100% certain where the exact centre of the device is, but I'm guessing it's between 20 and 50 millimetres below the top edge, so I can confidently say the ADF origin is at  somewhere around (0.0, 0.70, 0.0) in garage-space - give or take a few centimetres in all three axes.
 
-I'm currently using the [Project Tango Explorer app](https://play.google.com/store/apps/details?id=com.projecttango.tangoexplorer) to create the area definitions - I'll be adding this to the holodeck viewer app at some point, as this will become pretty important to do in-app on-device in the next phase of the project.
+I'm currently using the [Project Tango Explorer app](https://play.google.com/store/apps/details?id=com.projecttango.tangoexplorer) to create the area descriptions - I'll be adding this to the holodeck viewer app at some point, as this will become pretty important to do in-app on-device in the next phase of the project.
 
 ## Progress so far (20160304)
 
