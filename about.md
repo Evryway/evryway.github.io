@@ -14,7 +14,7 @@ All will become clear over the coming weeks and months. If you like Snow Crash a
 
 ### Contact
 
-If you're interested in coming on this journey, say hi!
+If you're interested in coming on this journey, say hi! If you'd like something built in VR/AR then get in touch.
 
 [hi@evryway.com](mailto:hi@evryway.com)
 
