@@ -49,6 +49,10 @@ url: http://www.evryway.com
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
 
+# Added by Timmo
+keywords: VR, virtual reality, tim swan, VR prototypes, AR, augmented reality, mixed reality, holodeck
+
+
 #
 # !! You don't need to change any of the configuration flags below !!
 #
