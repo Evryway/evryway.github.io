@@ -28,7 +28,7 @@ I've manually aligned the imported mesh in my Unity scene such that the origin o
 
 ## That looks terrible
 
-I know, it looks awful. It's a good job I have no eye for aesthetics, or I'd be tempted to stop right now. Fortunately, my art-fu is week, so I'm happy to keep trucking.
+I know, it looks awful. It's a good job I have no eye for aesthetics, or I'd be tempted to stop right now. Fortunately, my art-fu is weak, so I'm happy to keep trucking.
 
 The garage scene in the first video has about 500K tris, and runs "ok" on device. The source asset is around 50MB though, which I don't really want hanging around (and hopefully isn't remotely representative of the asset size I'm aiming for!). The second video, I used a decimate in Blender to drop the garage asset down to about 70K tris - this is a lot closer to the actual size of asset I'm aiming for (about 6MB binary source). The recording does drop frames (I'm using [adb screenrecord](http://stackoverflow.com/questions/28217333/how-to-record-android-devices-screen-on-android-version-below-4-4-kitkat)) in the low-quality version, and drops a lot more in the high quality version. When I'm not recording, it's hitting a pretty stable 30fps and I'll be looking to push this higher in the future - given that Rift / Vive are aiming for 90fps and above for very good reasons, it's important that the performance isn't a million miles away from that. 
 
