@@ -50,6 +50,43 @@ and arrive at our retina, which our brains then interpret as a view into that vi
 
 Super-cool!
 
+## Cameras
+
+our eyes are incredibly complex biological systems, and modelling them properly isn't something I have any time to do - so we're
+going to stick with the canonical representation that just about every game engine uses, which is a perfect
+[pinhole camera](https://en.wikipedia.org/wiki/Pinhole_camera) as a model of our (considerably more complex) pupil, lenses and retina
+system.
+
+Normally [first-person games](https://en.wikipedia.org/wiki/First-person_(video_games)) use a single camera which is set up so that it's centred
+in the middle of your screen, whatever that screen may be. This means that you "look out" into the world as though you had a single
+eye in the centre of your head, or close to. It also means that, regardless of the size of your screen, the camera is always
+centred on the screen centre for the [viewing frustum](https://en.wikipedia.org/wiki/Viewing_frustum) - the camera view axis
+is orthogonal to, and travels through the centre of, the near and far [clip planes](https://en.wikipedia.org/wiki/Clipping_(computer_graphics)).
+
+With VR, you need a camera to represent the view each eye sees, and you also have to think about how you translate the camera
+view so it matches up with your actual eyeballs. Different people have different sized faces, meaning the [distance between your
+pupils](https://en.wikipedia.org/wiki/Interpupillary_distance), or IPD, varies per person. The Tango demos give you a little control
+over this, and cardboard is similar. One thing that the Tango demos do is make the view that you see on the physical tango screen use
+orthogonal view frustums as described above. this has an immediate side effect of giving you black bars on the side of the screen, because
+the tango screen is about 150mm across, yet the average IPD is about 62-65mm. this means your eyes are about 32mm either side of the
+centre line, so you end up with a left eye view of 64mm, a right eye view of 64mm, and dead space in the remaining 25-30mm. I want to
+have the entire screen being used (peripheral vision is really important, and the wider the
+[field of view](https://en.wikipedia.org/wiki/Field_of_view_in_video_games) is, the better. In photography
+this is often referred to as [Angle of View](https://en.wikipedia.org/wiki/Angle_of_view).
+One of the concerns people have with the current Microsoft Hololens is the relatively small field of view, and both the Rift and the
+Vive are striving to give FOV values over 100 degrees.
+
+I've hacked in some non-orthogonal rendering matrices into my two cameras which lets me use
+[off-axis view vectors](http://paulbourke.net/papers/HET409_2004/het409.pdf), giving full
+screen coverage. That means no black bars - bonus. One thing I've not done is handle the distortion that the lenses bring,
+which all of the existing SDKs and demos for all the other platforms do much better than my current demos, so (outside the centre
+of the FOV) everything in my world looks wierdly distorted. I'll hopefully be fixing this soon!
+
+I've also not got any sort of vignetting around the screen views yet, which means you get a really sharp divide between the left
+and right eye views - this is pretty jarring initially, but you get used to it. I'll be experimenting with different vignettes
+at some point, but it's not a big priority right now.
+
+
 ## Geometry and materials
 
 The screen in most of our display devices is flat, which means when we want to display something that's not flat, we need
@@ -58,7 +95,7 @@ need to capture the properties of what we're looking at, which we'll normally ca
 [The basics are pretty simple to understand](http://people.csail.mit.edu/fredo/Depiction/1_Introduction/reviewGraphics.pdf) but
 the details of how this works is a very deep research field - if you're interested in the state of the art, then you should be
 looking at the output of [SIGGRAPH](http://www.siggraph.org/), where the majority of the cutting edge of research into rendering
-and visualisation techniques occur.
+and visualisation techniques are showcased.
 
 The current prototype is using Unity's rendering system to convert our mathematical representation of the world into something
 that we can observe on a display scene. It's a very capable rendering system that handles the geometry, shaders and materials
@@ -69,10 +106,35 @@ accurate picture of what we're wanting to see.
 
 The initial results I'm getting back from the Tango sensors (which give back a [depth point cloud](https://en.wikipedia.org/wiki/Point_cloud)
 at 5Hz and a 2D picture from the camera at 30Hz) are being turned into a mesh using Google's [Chisel](http://www.roboticsproceedings.org/rss11/p40.pdf)
-process. This is giving me a mesh that's aliased into 50mm squares, and each mesh vertex holds a colour value which is taken
+process. This is giving me a mesh that's aliased into 50mm cubes, and each mesh vertex holds a colour value which is taken
 from the picture created by the camera which matches up to the depth cloud at the same point in time.
 
-Doing this kind of processing realtime was science fiction until some point this decade, so being able to do it
+Doing this kind of processing realtime was science fiction until some point this decade, so being able to do it at all
+is basically blowing my tiny mind. The fact I can do it with 300 quid's worth of mobile hardware is simply astounding.
+
+Still, the results are currently far from what I want from the holodeck, and it's probable that the hardware limitations
+will mean the best I can possibly manage with the Tango alone won't be good enough. There's plenty of alternatives out there
+right now (including Kinect and the [Occipital Structure Sensor](http://structure.io/) ) which provide better fidelity in
+the distance field capture (more accurate scanning at a higher refresh rate, according to the numbers I've seen).
+
+Getting a higher quality surface representation will require a combination of more mesh complexity and more colour/material
+information in the mesh faces. The simplest way to go about this is to increase the point cloud density, but that's not going
+to scale terribly well for rendering performance and it's going to reach limits of the accuracy of the Tango's point cloud data
+at some point (probably once I hit around 10mm voxel aliasing).
+
+## Texturing
+
+The next, harder-to-do but obvious thing is to capture texture data from the camera and use this directly on the surface, instead
+of simply colouring the vertices on the mesh and having each mesh face blend between those colours.
+
+Unfortunately it doesn't appear that the Chisel implementation currently shipping with Tango does this natively, which means
+writing some additional processing to get this working. Currently, I've got this pegged as my highest priority for the next
+couple of weeks, and it's not going to be a trivial process to do in any kind of performant way. Still, let's take a bash at it!
+
+
+
+
+
 
 
 
