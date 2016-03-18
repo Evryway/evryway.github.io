@@ -14,7 +14,7 @@ Videos below!
 ## TL;DR
 
 [Week four - back in the garage](https://youtu.be/JjFYeffBuUA)
-{% include youtubep.html id="https://youtu.be/JjFYeffBuUA" %}
+{% include youtubep.html id="JjFYeffBuUA" %}
 
 ## This week's progress
 
