@@ -82,7 +82,7 @@ ideally be pointing orthogonally to the texture). This means you often get thing
 world projected across faces they shouldn't be on, especially if they are floating
 objects with thin geometry (wires, pipes, broom handles, that sort of thing).
 
-![Bad Projection]("{{ site.url }}/assets/week4/badprojection.jpg" =400x)
+![Bad Projection]({{ site.url }}/assets/week4/badprojection.jpg)
 
 Once I've frozen the grid cube, I can't go back later (yet!) and re-apply a different
 texture. Once it's done, it's done ... which means any missing polygons stay missing,
@@ -92,7 +92,7 @@ Because I'm freezing the cube, any adjacent cubes remain mutable, and the edges 
 quickly go out of alignment. I can look at welding these up later, but it currently makes
 the grids very obvious where they don't line up.
 
-![Bad Lineup]("{{ site.url }}/assets/week4/badlineup.jpg" =400x)
+![Bad Lineup]({{ site.url }}/assets/week4/badlineup.jpg)
 
 Any holes in the grid remain once it's frozen, and I've not got any clever plans
 for how to fix this, other than trash the frozen grid and start again.
@@ -103,7 +103,7 @@ over previously textured objects (the uv mapping uses the wrong base texture). I
 100% sure this isn't a bug in my mapping process, but I have a feeling this will be
 tricky to fix, and it crops up pretty fast currently.
 
-![Wrong Texture]("{{ site.url }}/assets/week4/wrongtex.jpg" =400x)
+![Wrong Texture]({{ site.url }}/assets/week4/wrongtex.jpg)
 
 The camera pose seems to match up as long as I move slowly, but I'm guessing
 there's a frame or so latency between where I think it is and where it actually is,
