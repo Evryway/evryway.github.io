@@ -93,5 +93,5 @@ I've been looking forward to about this venture is having more time with the fam
 to be some dinosaurs seen this week.
 
 
-Asta, all! And a good Easter to you!
+Hasta, all! And a good Easter to you!
 
