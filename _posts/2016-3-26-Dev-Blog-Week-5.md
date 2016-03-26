@@ -58,7 +58,7 @@ this is about 100 seconds too slow for my liking.
 ## Testing in the editor
 
 This would be vastly preferable for iteration time, but to make that work, I'll need
-some representitave data sets for the mutable mesh and the camera picture - both of which I now have
+some representative data sets for the mutable mesh and the camera picture - both of which I now have
 decent source assets. doing this will save me a huge amount of time when the change itself takes 5 seconds.
 before I had the collada exporter, I could only really work with a fake chunk of geometry - now I can
 use a piece of my garage that actually matches up to what I see (assuming I've got everything lined up
