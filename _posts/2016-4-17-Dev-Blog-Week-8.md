@@ -25,7 +25,7 @@ and teleporting / portals is one of them.
 I spent the first three days this week getting basic portals working on Tango,
 as you can see from the video above. It's not super-pretty, but it's functional.
 
-One of the main issues with the way I'm doing it [(see previous post!)](http://www.evryway.com/portals)
+One of the main issues with the way I'm doing it [(see previous post!)](http://www.evryway.com/Portals)
 is the cost of the rendertexture pass, as well as the quality issues with walking really close
 to the portal.
 
