@@ -124,10 +124,14 @@ or can't make any other progress, so I guess it's time to move on to stage 2: Ne
 ## Why networking?
 
 There's 4 key areas to this set of prototypes:
-* A representation of an environment
-* A representation of participants
-* gesture/skeleton recognition for participant pose
-* networking and voice comms to connect two or more participants
+
+    * A representation of an environment
+
+    * A representation of participants
+
+    * gesture/skeleton recognition for participant pose
+
+    * networking and voice comms to connect two or more participants
 
 The environment is as good as it needs to be (and hopefully someone will provide a tool
 that does it much better than mine does). I've looked at Photogrammetry, Phi.3D, Tango
