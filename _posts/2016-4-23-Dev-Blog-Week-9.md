@@ -136,7 +136,7 @@ Constructor and a few other capture mechanisms, and I'd like to be working with 
 doesn't break the bank yet gives excellent results.
 
 As an example of what I think is state of the art for consumer capture, take a look on
-Sketchfab for [GeoVC](https://sketchfab.com/geocv) and
+Sketchfab for [GeoCV](https://sketchfab.com/geocv) and
 [Paracosm](https://sketchfab.com/models?q=paracosm&sort_by=-likeCount). The best quality
 I've seen as a commercial product is [Matterport](https://matterport.com/) but I've not
 had a chance to see their resulting meshes, and their tools are not cheap right now.
