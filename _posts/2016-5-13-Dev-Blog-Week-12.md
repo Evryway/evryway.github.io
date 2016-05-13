@@ -14,8 +14,8 @@ below!
 
 [Week 12 - networking](https://www.youtube.com/watch?v=Qo3dGY-96R4)
 {% include youtubep.html id="Qo3dGY-96R4" %}
-[Week 12 - shared space](https://www.youtube.com/watch?v=VkvR9RD2OLwa)
-{% include youtubep.html id="VkvR9RD2OLwa" %}
+[Week 12 - shared space](https://www.youtube.com/watch?v=VkvR9RD2OLw)
+{% include youtubep.html id="VkvR9RD2OLw" %}
 [Week 12 - 360 video](https://www.youtube.com/watch?v=YubznG1aKIg)
 {% include youtubep.html id="YubznG1aKIg" %}
 
