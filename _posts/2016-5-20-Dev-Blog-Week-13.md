@@ -58,7 +58,7 @@ controller transforms and an array of input feeds.
 Latency is also going to be a big player in the holodeck - I'm looking at more than
 200ms right now with local tests, and we've all experienced the kind of delays
 you get on a transatlantic phone call or watched a live news broadcast where the
-delay can top a second or more. This is impossible to mitigate to the base level,
+delay can top a second or more. This is impossible to mitigate below the base level,
 but I need to ensure that all local actions are immediate, but appear synchronised
 to all the other clients, so I'll need to put some serious thought into structuring
 the data transfer around this.
