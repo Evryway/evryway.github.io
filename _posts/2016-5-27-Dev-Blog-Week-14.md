@@ -63,7 +63,9 @@ sub 10 second window I prefer. Ho hum.
 
 ## Next week ...
 
-Hand gesture tracking on Vive (if I can find a mount or a big chunk of blu tak) and
+* Networking in orbitals. 
+
+* Hand gesture tracking on Vive (if I can find a mount or a big chunk of blu tak) and
 Kinect integration into Portals.
 
 
