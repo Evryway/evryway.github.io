@@ -81,7 +81,7 @@ Secondly, I can specify a real-world origin space, and lock this to a virtual-wo
 
 It can take a little while for the Tango to lock in to the area description localisation - you can see this happen in this week's video at around 23 seconds - the Area Description Lock icon goes from red to green, and the world jumps a few feet to the left. Prior to this, the app was using Start_of_Service localised data. After this, it uses Area Description localised data.
 
-![Banana for scale]({{ site.url }}/assets/banana_grid.jpg)
+![Banana for scale](/assets/banana_grid.jpg)
 
 Here you can see (with a *very* small banana for scale - probably the world's worst scale banana) the garage-space grid at ground level.
 I've been using a very scientific method to define the origin of my world - I have put some gaffer tape on the floor with masking tape at one-metre markers.

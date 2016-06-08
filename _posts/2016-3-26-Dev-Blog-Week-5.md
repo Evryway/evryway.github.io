@@ -18,7 +18,7 @@ badly frozen chunks of geometry which need fixing up, welding and texturing.
 
 see [my COLLADA exporter post](http://www.evryway.com/Export-Working/) for a lot more details.
 
-![garage mesh]({{ site.url }}/assets/week5/garage_mesh.jpg)
+![garage mesh](/assets/week5/garage_mesh.jpg)
 
 Once I got this working properly (the beginning of Thursday morning) I moved on to trying to improve
 the quality of the mesh. This is currently a big work in progress, and I'm expecting to nail
@@ -68,7 +68,7 @@ properly).
 
 Short answer right now - It doesn't. yet.
 
-![door atlas]({{ site.url }}/assets/week5/some_door.jpg)
+![door atlas](/assets/week5/some_door.jpg)
 
 Magic sauce here. Take a picture, figure out the best triangles on the mesh to use, check if the triangle
 has a better picture already, and if not, grab that to the atlas. Mesh destination UVs shouldn't change
@@ -83,7 +83,7 @@ Applying the atlas is going to up the texel density by at least 2-3 times, so th
 should be much better than my test pictures. Because I'm only storing what you see (and hopefully the
 best version of that for each triangle) 
 
-![hand atlas]({{ site.url }}/assets/week5/some_hand.jpg)
+![hand atlas](/assets/week5/some_hand.jpg)
 
 
 ## Next week ...

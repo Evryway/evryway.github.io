@@ -1,16 +1,21 @@
 ---
 layout: page
-title: About
+title: About Evryway
 permalink: /about/
 ---
 
-# About Evryway
-
 Evryway is currently creating virtual and augmented reality prototypes.
+
+The short term goal is to build a multiparticipant holodeck experience,
+including environments, voice chat, avatars, motion, controller inputs and interactive
+elements.
 
 ### What does that even mean?
 
-All will become clear over the coming weeks and months. If you like Snow Crash and Neuromancer, you'll love the first prototype.
+All will become clear over the coming weeks and months, but if you like Neuromancer
+and Snow Crash, you'll love where we're going.
+
+Take a look at the prototypes videos for each step of the process.
 
 ### Contact
 

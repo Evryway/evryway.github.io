@@ -71,7 +71,7 @@ unique verts, that gives me 48K vertices as a cap per mesh object on export.
 
 Here's an example atlas texture:
 
-![Atlas texture]({{ site.url }}/assets/week9/atlas_1.jpg)
+![Atlas texture](/assets/week9/atlas_1.jpg)
 
 I'm certainly not making the most of the texture currently, as I'm clamping projection
 at a near distance which means the 16 pixel triangles will only ever be 4-5 pixels of the

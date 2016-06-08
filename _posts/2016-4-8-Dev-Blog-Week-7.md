@@ -57,7 +57,7 @@ Texturing is also a problem, and this is down to two issues - the image that I'm
 the orientation of the image that I'm taking. For starters, the camera is currently set
 to use auto-exposure, which means the brightness of the image varies constantly. 
 
-![colour mismatch]({{ site.url }}/assets/week7/colour_mismatch.jpg)
+![colour mismatch](/assets/week7/colour_mismatch.jpg)
 
 You can see in this image, that some of the wall is bright, and some of the wall is dark.
 this is because the triangles have been textured using two different frames of the camera,
@@ -94,7 +94,7 @@ The last main issue I've yet to properly address is the gaps between grid cubes 
 resulting mesh. In the Chisel data, because it's constantly updating, the mesh edges
 are very rarely mis-aligned. 
 
-![grid edges]({{ site.url }}/assets/week7/grid_edges.jpg)
+![grid edges](/assets/week7/grid_edges.jpg)
 
 in my recent scans, the edges of the grids are painfully obvious, where I've frozen a grid
 at time t, and then frozen a neighbour at some later time t+30s. even a millimetre gap
@@ -126,7 +126,7 @@ And, on Tuesday, as if deliberately designed to break my focus, the
 the majority of the day fiddling with it, playing games and generally getting a feel for
 the first ever consumer VR headset.
 
-![Rift]({{ site.url }}/assets/week7/bananulous_rift.jpg)
+![Rift](/assets/week7/bananulous_rift.jpg)
 
 What's it like, you say? It's excellent. It's NOT perfect - I find the flaring introduced
 by the fresnel lenses pretty distracting - but it's an incredibly accomplished bit of

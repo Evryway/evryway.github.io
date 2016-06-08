@@ -33,7 +33,7 @@ taken me an awful lot longer.
 
 ## Test assets and round tripping
 
-![Round Trip Cube]({{ site.url }}/assets/week5/round_trip_cube.jpg)
+![Round Trip Cube](/assets/week5/round_trip_cube.jpg)
 
 Writing an output file is all well and good, but you need to check it's valid. My friend Ryan was generous enough
 to provide me with a fantastic test asset (a cube! with textures!) that had everything in it I needed to pass through
@@ -53,7 +53,7 @@ Testing the mesh capture process in the editor is not easy - especially not with
 smaller test assets I've used for pushing through the export process, but once they were working, the time had arrived to actually
 do a scan on device and see if anything came out the other end. And it did. 
 
-![Black Hole]({{ site.url }}/assets/week5/first_mesh_from_device.jpg)
+![Black Hole](/assets/week5/first_mesh_from_device.jpg)
 
 Yay! something vaguely resembling the garage appears!
 
@@ -65,7 +65,7 @@ The second major issue was the lack of textures, which was caused by not actuall
 
 ## second effort
 
-![Coloured Hole]({{ site.url }}/assets/week5/second_mesh_from_device.jpg)
+![Coloured Hole](/assets/week5/second_mesh_from_device.jpg)
 
 This is looking "better" - the textures are being applied, the UVs are obviously working. There's still a black hole in
 the universe, but the fix for that didn't take too long.
@@ -74,7 +74,7 @@ the universe, but the fix for that didn't take too long.
 
 And here we are, with this morning's work.
 
-![Get back into the kitchen]({{ site.url }}/assets/week5/kitchen_firstnodeset.jpg)
+![Get back into the kitchen](/assets/week5/kitchen_firstnodeset.jpg)
 
 This is a very quick scan of the kitchen. The scanning process took about 2-3 minutes (about the same as videoing the space would).
 The generated output actually has a lot more geometry in it, but due to being over 65K triangles, Unity is splitting it up into

@@ -18,7 +18,7 @@ why the projection is distorted.
 Here's a from-device realtime capture. Holes are due to how I'm freezing the mesh cubes, and
 should be resolved early next week.
 
-![Latest mesh]({{ site.url }}/assets/week6/texmesh1.jpg)
+![Latest mesh](/assets/week6/texmesh1.jpg)
 
 ## Next week ...
 
