@@ -94,11 +94,10 @@ Altspace:
 
 ![altspace](http://altvr.wpengine.netdna-cdn.com/wp-content/uploads/2015/12/ruben.gif)
 
-and here's a *wonderful* TLOU cosplay image, featuring real people.
+and here's a *wonderful* TLOU cosplay image by
+[Jordan Farbridge](http://jordanfarbridge.com/reigan-chan/product/the-last-of-us-bundle/).
 
 ![TLOU cosplay](http://jordanfarbridge.com/reigan-chan/wp-content/uploads/2015/06/DSC08386.jpg)
-
-
 
 The Last Of Us is close to the pinnacle of quality when it comes to human models in games. There's a few
 movies (such as Avatar, natch) that have really pushed the boundaries of what's capable, but even now
