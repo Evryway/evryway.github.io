@@ -65,7 +65,7 @@ because I want to get avatars working, gosh dagnabbit.
 
 ## Avatars part two
 
-Just about every link i've seen discussing Kinect and Unity recommends the
+Just about every link I've seen discussing Kinect and Unity recommends the
 [Kinect V2 Examples with MSSDK](https://www.assetstore.unity3d.com/en/#!/content/18708) package,
 and I grabbed it early Wednesday morning. It's awesome, and huge, and supports Kinect 1, 2 and
 (as far as I can tell) OpenNI drivers. I've barely scratched the surface yet, as I was intending
@@ -73,7 +73,7 @@ to use it as a springboard to create my own stuff but it's so fully featured I'm
 just using it directly - at the very least, it's given me an idea of the amount of effort I'll
 need to put into writing this stuff properly myself.
 
-One piece of wierdness that crops up with the Avatar driving is strange motion occuring on
+One piece of wierdness that crops up with the Avatar driving is strange motion occurring on
 hands and feet. It's probable that I've simply not got the correct settings set up on the tracking,
 but the thumb-hand rotation doesn't appear to be working correctly (the cube-man shows the
 thumb orientation, the unity avatar doesn't appear to reflect this at all). The knee-heel joint
@@ -102,7 +102,7 @@ I'm going to look at turntables to make scanning "things" (objects and people, p
 process. I've got a nice big lazy susan bearing on order, and I might be doing some woodwork next
 week to build a platform for scanning things on. The reason for buying the bearing, rather than a turntable,
 is that ultimately I'll be wanting to be able to scan people to a decent quality, which means a motorised
-turntable that can take a load of 100+KG. I quite fancy doing a bit of work in the real world - all my
+turntable that can take a load of 100+ Kg. I quite fancy doing a bit of work in the real world - all my
 VR experiments are leaving me a bit disconnected from physical reality!
 
 I've spent a little more time looking at capture software, including the 3D Scan and 3D Builder software
