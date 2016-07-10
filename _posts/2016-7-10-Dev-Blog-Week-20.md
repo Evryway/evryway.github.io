@@ -24,7 +24,7 @@ experiments.
 One of the really cool demos for telepresence I saw a couple of years
 back is this one:
 
-% include youtubep.html id="Ghgbycqb92c" %}
+{% include youtubep.html id="Ghgbycqb92c" %}
 
 There's a [few more](https://www.youtube.com/watch?v=UyJ6P-gnBwM) videos
 out there doing the same sort of thing now, and hopefully I can get something
