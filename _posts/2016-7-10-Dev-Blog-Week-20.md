@@ -19,6 +19,19 @@ a roadblock, but it's normally a good sign to shelve things for a while, so
 I'm going to chalk this one up as "too hard" and move on to a couple of new
 experiments.
 
+## Scanning improvements
+
+I spent a day early in the week going back to the scanner app, and putting in
+some better drift correction. A variety of conversations with the good folks on
+the google Tango forums brought back to my mind an issue I'd left unresolved in the
+tango pose tracking process. I switched over to using the historic poses at all times
+instead of live poses, as it looks like the historic poses have much better drift
+correction applied to them. Once that was working, the scans started looking a lot
+more stable. I've still got the key problems left to resolve (no exposure control,
+broken camera frustum, projecting through objects) but it was nice to get a small
+win after a week of fighting with the Kinect. I'll be taking a few more scans
+next week, as well as trying to get the [RealityCapture](https://www.capturingreality.com/) tool working.
+
 ## Texture projection
 
 One of the really cool demos for telepresence I saw a couple of years
