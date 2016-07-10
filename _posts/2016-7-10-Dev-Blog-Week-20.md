@@ -92,5 +92,10 @@ this stuff. This will mean me playing a lot more games and spending less time wo
 on the holodeck, but I think it could be educational research ;) Plus, if it gets me fitter
 then it's been worthwhile.
 
+## CSR 2
+
+I've also spent a big chunk of the week playing CSR 2, which may or may not still contain
+code written by me ;) It's looking very shiny - I like it. Great to see the NM team take
+the CSR franchise onwards and upwards, good work guys and gals!
 
 
