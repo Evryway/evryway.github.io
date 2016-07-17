@@ -74,7 +74,8 @@ So, that's the plan for the next week!
 My [Zotac 1070](https://www.zotac.com/us/product/graphics_card/GeForce-GTX-1070/all) arrived
 yesterday. It's nice to finally have a graphics card capable of running all the VR content
 without dropping frames and telling me my machine is rubbish (I know it's rubbish, thanks
-Oculus). This has lead onto a Fruit Ninja binge, which raised an interesting question from
+Oculus). This has lead onto a [Fruit Ninja](http://store.steampowered.com/app/486780/)
+binge, which raised an interesting question from
 my brother. I told him that it was a good workout, to which he asked, "Do you have any
 metrics?".
 
