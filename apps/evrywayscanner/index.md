@@ -52,6 +52,12 @@ Sketchfab doesn't work (either of the raw file or in app) - it's on the list.
 * ADF selection
 * ADF creation
 * Any kind of fancy UI
+* Any kind of tutorial
+* Privacy policy
+
+*Please note* - this app may explode your device, cause an alien or other-dimensional invasion and/or imbue you with
+super powers, wanted or not. In other words, if something breaks, no liability is implied and you're on your own.
+
 
 
 
