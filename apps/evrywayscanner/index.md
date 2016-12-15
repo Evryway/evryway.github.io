@@ -5,7 +5,7 @@ permalink: /apps/evrywayscanner/
 ---
 
 Scanner is an environment capture prototype running on Google's project Tango tablet. Scanner can scan a room
-in realtime to a textured mesh, and save that out as a collada object.
+in realtime to a textured mesh, and save that out as an OBJ or collada object.
 
 Scanner is currently in Closed Alpha - if you've got a Tango device (ideally not a yellowstone kit) and would like to
 test drive the app, contact me for more details.
