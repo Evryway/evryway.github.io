@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.evryway.scanner.a1",
+    "sha256_cert_fingerprints":
+    ["A9:74:40:B5:33:61:67:92:89:DD:A7:61:27:BC:75:41:CE:F1:F6:29:46:AC:BE:2D:0E:4B:8A:26:6D:E7:55:C0"]
+  }
+}]
