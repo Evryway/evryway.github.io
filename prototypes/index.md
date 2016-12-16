@@ -27,8 +27,6 @@ Vive, Rift and Tango.
 
 # Scanner
 
-(Video coming soon!)
+* [Scanner has moved from Prototype to App status](/apps/evrywayscanner)
 
-Scanner is an environment capture prototype running on Google's project Tango tablet. Scanner can scan a room
-in realtime to a textured mesh, and save that out as a collada object.
 
