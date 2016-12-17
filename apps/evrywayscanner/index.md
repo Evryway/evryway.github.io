@@ -20,9 +20,9 @@ Here's an example:
 
 ## How to get scanner:
 
-#### Scanner ALPHA CONDITIONS
+#### Scanner ALPHA/BETA CONDITIONS
 
-Scanner is in Closed Alpha. please [contact me](mailto:hi@evryway.com) to be added to the Alpha users.
+Scanner is in Closed Beta. please [contact me](mailto:hi@evryway.com) for instructions on how to join.
 Testing is currently limited to Phab 2 Pro owners. Scanner works on Yellowstone too, but the experience
 is not ideal.
 
@@ -37,7 +37,7 @@ don't ask!
 
 #### Download the app
 
-Once you're given alpha access, [download the app from the play store.](https://play.google.com/apps/testing/com.evryway.scanner.a1)
+Once you're granted access, [download the app from the play store.](https://play.google.com/apps/testing/com.evryway.scanner.a1)
  
 #### Join the Evryway Feedback community on Google+
 
