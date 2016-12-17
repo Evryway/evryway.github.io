@@ -43,6 +43,12 @@ Once you're granted access, [download the app from the play store.](https://play
 
 Please [join the community and give feedback.](https://plus.google.com/communities/104588434400522026854)
 
+## Release notes:
+
+V1.0.1.1 (20161217)
+Added Sketchfab export, using Oauth2. As long as your mesh is a reasonable size, you should be able to export directly to Sketchfab.
+You will need to manually setup your model after import on the website, as it will be in Draft mode. Ideal settings are Unlit, with
+a touch of sharpness.
 
 
 ## How to use Scanner:
@@ -118,11 +124,11 @@ Sketchfab doesn't work (either of the raw file or in app) - it's on the list.
 
 ## Features that ain't present or working yet:
 
-* Export to Sketchfab
+* Sketchfab preset settings
 * Colour balancing
 * Mesh chunk welding
 * ADF selection
-* ADF creation
+* ADF creation / learning mode
 * Any kind of fancy UI
 * Any kind of tutorial
 * Privacy policy
