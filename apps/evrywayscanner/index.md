@@ -91,15 +91,26 @@ but it covers about half of the screen.
 
 #### Getting valid results
 
-You will need to keep the device still for the texture to be captured. Look at the fourth indicator - red means you're
+You will need to keep the device still for the mesh and texture to be captured. Look at the fourth indicator - red means you're
 moving, green means it should be capturing.
 
-By default, Scanner will try and localise against the newest ADF file on device. If it successfully localises, the third
-indicator will go green.
+##### Creating an ADF
 
-If you can't seem to capture an area, try a different view on it - walk to one side, get closer or further away, etc.
-the capture region should be about 1-3 metres in front of you. Technical details on how to get good results should
-come soon!
+By default, Scanner will try and localise against the newest ADF file on device. If it successfully localises, the third
+indicator will go green. *you will get much better results if you use an ADF*.
+
+There's no option to create an ADF inside the app just yet. The simplest thing to do is to use Tango Explorer to create
+a new ADF of the area you're about to scan. Scanner will try and load up the most recent ADF to work against.
+
+#####  
+
+Mesh chunks only get captured or updated when they are visible to the camera - and that's the whole chunk cube, not
+just what you see. If there's a hole in the mesh that you can't seem to update, or If you can't seem to capture an area,
+try a different view on it - walk to one side, get closer or further away, etc.
+the capture region should be about 1-3 metres in front of you. 
+
+The texture on the mesh is currently set to only update if the mesh changes. I'll be changing the way this works
+in a near future update to allow you to retexture an existing chunk even if the mesh is static.
 
 #### Saving your mesh
 
