@@ -121,6 +121,11 @@ You should be able to upload the zip directly to sketchfab.
 You should be able to load the file into Unity, Blender, etc - anything that supports Collada. For now, upload to
 Sketchfab doesn't work (either of the raw file or in app) - it's on the list.
 
+##### (EXPERIMENTAL) Sketchfab
+
+Hit the Sketchfab button to export to Sketchfab. You'll be kicked to a browser to do Oauth2 authorization. When you
+grant access, select the Evryway Scanner app to handle the result, and your model should be uploaded.
+
 
 ## Features that ain't present or working yet:
 
