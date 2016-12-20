@@ -43,9 +43,6 @@ Once you're granted access, [download the app from the play store.](https://play
 
 Please [join the community and give feedback.](https://plus.google.com/communities/104588434400522026854)
 
-## Release notes:
-
-(coming shortly!)
 
 ## How to use Scanner:
 
@@ -184,5 +181,28 @@ in a near future update to allow you to retexture an existing chunk even if the 
 *Please note* - this app may explode your device, cause an alien or other-dimensional invasion and/or imbue you with
 super powers, wanted or not. In other words, if something breaks, no liability is implied and you're on your own.
 
+## Release notes:
+
+1.0.1.5
+Turned back on retexturing. (disabled by mistake!)
+
+1.0.1.4
+Main menu UI changes:
+Added RECORD, CLEAR.
+
+1.0.1.3
+Fixed rotation of texture visualisation quad (it's nearly the right size and in nearly the right place now).
+
+1.0.1.2
+Added portrait support (much easier to hold on Phab)
+Scanner will start up in whatever orientation you are in when you press the icon. If you want to run in Landscape, then start the app with the device in landscape mode.
+
+1.0.1.1
+Added Sketchfab upload - please test and see if it works for you!
+Toast added to save flow, so there's a vague idea of what's happening.
+
+1.0.1.0
+"works on Phab".
+Lots of changes to handle device orientation.
 
 
