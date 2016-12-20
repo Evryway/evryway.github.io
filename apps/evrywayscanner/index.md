@@ -45,29 +45,11 @@ Please [join the community and give feedback.](https://plus.google.com/communiti
 
 ## Release notes:
 
-1.0.1.5
-Turned back on retexturing. (disabled by mistake!)
-
-1.0.1.4 (20161220)
-Main menu UI changes:
-Added RECORD, CLEAR.
-
-1.0.1.3 (20161219)
-Fixed rotation of texture visualisation quad (it’s nearly the right size and in nearly the right place now).
-
-1.0.1.2 (20161218)
-Added portrait support (much easier to hold on Phab)
-Scanner will start up in whatever orientation you are in when you press the icon. If you want to run in Landscape, then start the app with the device in landscape mode.
-
-1.0.1.1 (20161217)
-Added Sketchfab export, using Oauth2. As long as your mesh is a reasonable size, you should be able to export directly to Sketchfab.
-You will need to manually setup your model after import on the website, as it will be in Draft mode. Ideal settings are Unlit, with
-a touch of sharpness.
-
+(coming shortly!)
 
 ## How to use Scanner:
 
-### V1.0.1.4 (20161220)
+### V1.0.1.5 (20161220)
 
 Scanner uses the Tango depth and colour cameras to create a textured mesh representation of the things it sees.
 
