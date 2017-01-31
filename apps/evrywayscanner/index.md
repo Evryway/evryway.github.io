@@ -34,7 +34,11 @@ please [see the tutorial](tutorial) for instructions.
 
 ## How to get scanner
 
-Scanner is now in Open Beta. [Grab it from the play store here!](https://play.google.com/store/apps/details?id=com.evryway.scanner.a1)
+Scanner is now in Open Beta. 
+
+[Opt in here!](https://play.google.com/apps/testing/com.evryway.scanner.a1)
+
+[Grab it from the play store here!](https://play.google.com/store/apps/details?id=com.evryway.scanner.a1)
 
 As it's a beta:
 
