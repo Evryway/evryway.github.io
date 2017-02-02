@@ -84,5 +84,5 @@ exclude:
     - CNAME
 
 include: 
-    - .well_known
+    - .well-known
 
