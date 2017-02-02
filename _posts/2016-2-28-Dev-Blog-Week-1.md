@@ -2,7 +2,7 @@
 layout: post
 title: Dev Blog - How to build a holodeck, week one
 category: DevBlog
-tags: DevBlog, weekly
+tags: DevBlog weekly
 ---
 
 Welcome to my "How to build a holodeck - follow along at home with sticky tape and scissors" dev blog. This is week one, which means we'll be figuring out how to do this (the process) as well as how to do this (the content) as we go. I'm hoping to make this a regular thing - and that really depends on whether there's enough readers to make it worthwhile. If you like this, share it and tell me!

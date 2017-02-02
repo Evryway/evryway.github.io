@@ -2,6 +2,7 @@
 layout: page
 title: Evryway Scanner
 permalink: /apps/evrywayscanner/
+tags: tango scanner evrywayscanner phab2pro holodeck realtime 3D 3Dscanner projecttango
 ---
 
 Evryway Scanner captures the world in realtime.

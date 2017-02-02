@@ -3,7 +3,7 @@ layout: post
 title: Dev Blog - How to build a holodeck, week two
 category: DevBlog
 tags: DevBlog, weekly
-keywords: dev blog, how to build a holodeck
+keywords: devblog howtobuildaholodeck
 ---
 
 I'm wearing a VR headset. I can see stuff in the world. Where am I?

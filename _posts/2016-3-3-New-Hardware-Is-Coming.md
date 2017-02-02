@@ -2,7 +2,7 @@
 layout: post
 title: New hardware is coming
 category: news
-tags: hardware, news
+tags: hardware news
 ---
 
 This week has seen the pending release of probably the two extremes of VR hardware. [HTC's Vive is now officially available for pre-order](https://www.htcvive.com/preorder/en-us/) - and[ McDonalds is creating a Cardboard-a-like device](http://www.dailymail.co.uk/sciencetech/article-3473031/Virtually-lovin-McDonald-s-giving-away-Happy-Meal-boxes-transform-virtual-reality-headsets-children.html) using your chip holder (or fries holder, for my US visitors).

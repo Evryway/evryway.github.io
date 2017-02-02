@@ -3,7 +3,7 @@ layout: post
 title: Here in my garage
 category: DevBlog
 tags: DevBlog, update
-keywords: garage, blender, 47
+keywords: garage blender 47
 ---
 
 Here in my garage, I have the world. No Lambourghinis (yet). Not even virtual ones.
