@@ -6,6 +6,23 @@ permalink: /apps/evrywayscanner/release_notes
 
 [(back to Evryway Scanner)](index)
 
+1.0.3.4 (20170203)
+Added memory usage display
+
+1.0.3.3 (20170202)
+Fix for lockup during scan on large datasets
+
+1.0.3.2 (20170131)
+Performance improvements
+Open beta time!
+
+1.0.3.1 (20170130)
+Performance and quality improvements
+
+1.0.3.0 (20170128)
+IL2CPP release build
+UI updated
+
 1.0.2.9 (20170127)
 Improvements to texture occlusion
 Performance and stability improvements
