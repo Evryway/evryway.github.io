@@ -5,6 +5,12 @@ permalink: /apps/evrywayscanner/
 tags: tango scanner evrywayscanner phab2pro holodeck realtime 3D 3Dscanner projecttango
 ---
 
+<a href='https://play.google.com/store/apps/details?id=com.evryway.scanner.a1&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+<img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' height="128" />
+</a>
+
+[Grab it from the play store here!](https://play.google.com/store/apps/details?id=com.evryway.scanner.a1)
+
 Evryway Scanner captures the world in realtime.
 
 <div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/74db2b0558644c3081a4893055c18a90/embed" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
@@ -32,30 +38,11 @@ Scanner allows you to save a textured mesh to your device, or upload to Sketchfa
 
 please [see the tutorial](tutorial) for instructions.
 
-
-## How to get scanner
-
-Scanner is now in Open Beta. 
-
-[Opt in here!](https://play.google.com/apps/testing/com.evryway.scanner.a1)
-
-[Grab it from the play store here!](https://play.google.com/store/apps/details?id=com.evryway.scanner.a1)
-
-As it's a beta:
-
-* Don't expect anything to work. ANYTHING.
-* please respect my work (don't steal / share / dissasemble the app)
-* Use scanner for good, not evil.
-
-*Please note* - this app may explode your device, cause an alien or other-dimensional invasion and/or imbue you with
-super powers, wanted or not. In other words, if something breaks, no liability is implied and you're on your own.
-
-#### Join the Evryway Feedback community on Google+
+## Join the Evryway Feedback community on Google+
 
 Got the app? Want to help make it better? 
 
 Please [join the community and give feedback.](https://plus.google.com/communities/104588434400522026854)
-
 
 ## Features that ain't present or working yet:
 
