@@ -6,6 +6,11 @@ permalink: /apps/evrywayscanner/release_notes
 
 [(back to Evryway Scanner)](index)
 
+1.0.3.6 (20170208)
+Performance and memory improvements.
+Increased point cloud processing quality.
+Optimized save flow.
+
 1.0.3.4 (20170203)
 Added memory usage display
 
