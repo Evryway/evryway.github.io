@@ -6,6 +6,23 @@ permalink: /apps/evrywayscanner/release_notes
 
 [(back to Evryway Scanner)](index)
 
+1.1.2.0 (20170617)
+Update to Hopak.
+Fix for lockup when backgrounding / restoring app.
+ 
+1.1.0.3: (20170329)
+Farandole release 
+ 
+1.1.0.2 (20170321)
+Update for Additional Tango device support
+ 
+1.1.0.0 (20170213)
+General release
+ 
+1.0.3.7 (20170209)
+Faster saving process.
+Removed Collada export.
+
 1.0.3.6 (20170208)
 Performance and memory improvements.
 Increased point cloud processing quality.
