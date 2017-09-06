@@ -6,6 +6,10 @@ permalink: /apps/evrywayscanner/release_notes
 
 [(back to Evryway Scanner)](index)
 
+1.2.0.0 (20170901)
+Now working on Zenfone AR!
+Update to Ikariotikos SDK.
+
 1.1.2.0 (20170617)
 Update to Hopak.
 Fix for lockup when backgrounding / restoring app.

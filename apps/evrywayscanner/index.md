@@ -2,7 +2,7 @@
 layout: page
 title: Evryway Scanner
 permalink: /apps/evrywayscanner/
-tags: tango scanner evrywayscanner phab2pro holodeck realtime 3D 3Dscanner projecttango
+tags: tango scanner evrywayscanner phab2pro holodeck realtime 3D 3Dscanner projecttango zenfonear ASUS_A002 scanning
 ---
 
 <a href='https://play.google.com/store/apps/details?id=com.evryway.scanner.a1&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
@@ -11,7 +11,7 @@ tags: tango scanner evrywayscanner phab2pro holodeck realtime 3D 3Dscanner proje
 
 [Grab it from the play store here!](https://play.google.com/store/apps/details?id=com.evryway.scanner.a1)
 
-Evryway Scanner captures the world in realtime.
+Evryway Scanner captures the world in realtime. Works on ASUS Zenfone AR and Lenovo Phab 2 Pro.
 
 <div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/74db2b0558644c3081a4893055c18a90/embed" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
 
