@@ -143,7 +143,7 @@ a pile of shite, and then realises that Tango was where it was at in the first p
 
 The laser sensor isn't essential to do most of the things I'd like to do, so as the hardware and SLAM stacks improve
 and folks release new and cool synthesis techniques for photogrammetry and object recognition we'll start to see
-much of the future being to happen anyway.
+much of the future begin to happen anyway.
 
 And we're going to see a metric shitload of apps and demos with virtual things hanging in "real" space while they
 slowly drift across your table, then disappear when you move your phone too fast.
