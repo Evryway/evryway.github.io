@@ -1,0 +1,13 @@
+---
+---
+$atc: #d0deee;
+$fgtc: #eedddd;
+$bgc: #0b0218;
+body {
+  background-color: $bgc;
+    color: $fgtc;
+}
+a { color: $atc; }
+h1, h2, h3, p, p.site-description { color: $fgtc; }
+nav a, div a { color: $atc; }
+footer, div.container, div.wrapper-footer { background-color: $bgc; }
