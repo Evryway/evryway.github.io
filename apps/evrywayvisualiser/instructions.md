@@ -62,6 +62,51 @@ Select INFO to find out additional details about the app.
 If you keep your hands still for a while, they'll fade away. Move them to bring them back.
 
 
+# How to add music to your Quest
+
+There's a few ways to get music tracks on to your quest. You'll need to start with one or more
+MP3s on your PC.
+
+The simplest way is to copy the files over using Windows Explorer.
+
+## Copying files with Windows Explorer
+
+Browse to the Quest device on your PC. 
+
+NOTE: If you don't see the Quest device, you can normally make it appear by running "adb devices" from the commandline.
+
+![browseto_pc_quest](browseto_pc_quest.png)
+
+From there, find a place to put your music. You can copy tracks anywhere you want - let's put them in the Music
+folder to start with. You can create your own folders, and copy over folders too.
+
+![browseto_pc_questmusic](browseto_pc_questmusic.png)
+
+Then, copy over the track from your PC. Drag'n'drop, cut-n-paste, the choice is yours.
+
+![browseto_pc_copy](browseto_pc_copy.png)
+
+## Copying files with SideQuest
+
+If you can't get your quest visible on the PC for some reason, never fear - you can use SideQuest to copy tracks
+over. Select "File Explorer" in SideQuest, browse to your destination, and click the "Add something" (+) button in
+the bottom right, then "copy file to this folder". Pick your file, and wait for SideQuest to copy it over.
 
 
+# Playing music on your Quest
+
+Once a track is on your Quest, you can select it from the Tracks menu. Find the Quest device under Sources,
+then browse to /sdcard, and down to the correct location.
+
+![browseto_quest_sdcard](browseto_quest_sdcard.png){:height="50%" width="50%"}
+![browseto_quest_music](browseto_quest_music.png){:height="50%" width="50%"}
+
+Then, select the track (point and click)
+
+![browseto_quest_picktrack](browseto_quest_picktrack.png){:height="50%" width="50%"}
+
+Now, Your track should start playing!
+
+
+![browseto_quest_playing](browseto_quest_playing.jpg){:height="50%" width="50%"}
 
