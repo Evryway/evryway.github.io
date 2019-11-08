@@ -16,7 +16,7 @@ permalink: /apps/evrywayvisualiser/instructions
 
 Ensure you've got the latest version of [SideQuest](https://sidequestvr.com/#/) installed.
 
-Download the APK, browse to it in Windows Exploder, and drag it on to the SideQuest window.
+Download the APK, browse to it in Windows Explorer, and drag it on to the SideQuest window.
 
 ![install sidequest](install_sidequest.png){:height="50%" width="50%"}
 
