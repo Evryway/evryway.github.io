@@ -6,6 +6,10 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.0.17 (20191109)
+
+Fixed bug with scrub bar and tracks locking up. (thanks @2tmb)
+
 # 0.0.16 (20191106)
 
 New effect added.
