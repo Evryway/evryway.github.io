@@ -6,11 +6,11 @@ permalink: /apps/evrywayvisualiser/instructions
 
 [(back to Evryway Visualiser)](index)
 
-# How to download
+# [How to download](#how-to-download)
 
 [Evryway Visualiser is currently available via Itch.io.](https://evryway.itch.io/evryway-visualiser)
 
-# How to install
+# [How to install](#how-to-install)
 
 ### Via SideQuest
 
@@ -41,15 +41,19 @@ Once your Quest is connected, use ADB to install Evryway Visualiser:
 adb install -r path_to_your_downloads/com.Evryway.EvrywayVisualiser_Release.apk
 '''
 
-# How to visualise
+# [How to visualise](#how-to-visualise)
 
 As of Nov, 2019, Visualiser will begin playing a demo song.
 
-use the LEFT HAND STICK to skip the current track forwards and backwards.
-
-use the RIGHT HAND STICK to skip to previous and next track.
-
 Press the MENU button on the left controller to bring up the menu at any point.
+
+use the LEFT STICK to skip the current track forwards and backwards.
+
+use the RIGHT STICK to skip to previous and next track.
+
+use the RIGHT GRIP to recentre your view.
+
+from the MENU,
 
 Select TRACKS for a list of music tracks. 
 * Browse sources by highlighting them with the pointer and clicking with the trigger.
@@ -62,7 +66,32 @@ Select INFO to find out additional details about the app.
 If you keep your hands still for a while, they'll fade away. Move them to bring them back.
 
 
-# How to add music to your Quest
+# [How to play a music track](#how-to-play-music)
+
+Once a track is on your Quest, you can select it from the Tracks menu.
+
+Press the Menu button, and click on Tracks.
+
+If you have MP3s on your Quest, you'll find them under Sources, Oculus Quest.
+
+then browse to /sdcard, and down to the correct location.
+![browseto_quest_playing](browseto_quest_playing.jpg){:height="50%" width="50%"}
+
+![browseto_quest_sdcard](browseto_quest_sdcard.png){:height="50%" width="50%"}
+![browseto_quest_music](browseto_quest_music.png){:height="50%" width="50%"}
+
+Then, select the track (point and click)
+
+![browseto_quest_picktrack](browseto_quest_picktrack.png){:height="50%" width="50%"}
+
+Now, Your track should start playing!
+
+![browseto_quest_playing](browseto_quest_playing.jpg){:height="50%" width="50%"}
+
+If you have a DLNA server, it should show up under Sources - select it, and browse
+to the right track.
+
+# [How to add music to your Quest](#how-to-add-music)
 
 There's a few ways to get music tracks on to your quest. You'll need to start with one or more
 MP3s on your PC.
@@ -92,21 +121,4 @@ If you can't get your quest visible on the PC for some reason, never fear - you 
 over. Select "File Explorer" in SideQuest, browse to your destination, and click the "Add something" (+) button in
 the bottom right, then "copy file to this folder". Pick your file, and wait for SideQuest to copy it over.
 
-
-# Playing music on your Quest
-
-Once a track is on your Quest, you can select it from the Tracks menu. Find the Quest device under Sources,
-then browse to /sdcard, and down to the correct location.
-
-![browseto_quest_sdcard](browseto_quest_sdcard.png){:height="50%" width="50%"}
-![browseto_quest_music](browseto_quest_music.png){:height="50%" width="50%"}
-
-Then, select the track (point and click)
-
-![browseto_quest_picktrack](browseto_quest_picktrack.png){:height="50%" width="50%"}
-
-Now, Your track should start playing!
-
-
-![browseto_quest_playing](browseto_quest_playing.jpg){:height="50%" width="50%"}
 
