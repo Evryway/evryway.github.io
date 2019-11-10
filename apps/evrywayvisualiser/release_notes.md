@@ -6,6 +6,10 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.18 (20191110)
+
+Added profile, added "press menu button" tutorial flow, fixed alpha sorting bug (thanks @johnneke)
+
 # 0.0.17 (20191109)
 
 Fixed bug with scrub bar and tracks locking up. (thanks @2tmb)
