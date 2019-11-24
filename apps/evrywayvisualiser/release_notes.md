@@ -6,6 +6,10 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.21 (20191116)
+
+Added HearThis.At search - experimental!
+
 # 0.20 (20191114)
 
 Added VR Keyboard.
