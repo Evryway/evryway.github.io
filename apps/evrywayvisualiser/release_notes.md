@@ -6,6 +6,11 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.23 (20191127)
+
+Added effects settings - you can now enable/disable effects individually.
+Upgrade to Unity 2019.3 - URP here we come.
+
 # 0.21 (20191116)
 
 Added HearThis.At search - experimental!
