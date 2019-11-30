@@ -6,6 +6,11 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.24 (20191130)
+
+Switch over to URP in Unity.
+Fix for DLNA server app on Android.
+
 # 0.23 (20191127)
 
 Added effects settings - you can now enable/disable effects individually.
