@@ -6,6 +6,10 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.25 (20191130)
+
+Another DLNA fix.
+
 # 0.24 (20191130)
 
 Switch over to URP in Unity.
