@@ -6,6 +6,10 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.30 (20191202)
+
+Unity Visual Effects Graph is go! Fireworks go boom.
+
 # 0.25 (20191130)
 
 Another DLNA fix.
