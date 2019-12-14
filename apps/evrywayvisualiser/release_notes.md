@@ -6,6 +6,11 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.33 (20191214)
+
+Added Bedtime mode.
+Added Rainfall effect.
+
 # 0.31 (20191207)
 
 Added effect cycle delay setting.
