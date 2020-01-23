@@ -6,6 +6,13 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.41 (20200123)
+
+Hand tracking! Oculus quest hand tracking now working.
+Since there's no buttons, just give a thumbs-up with your left hand to get the menu.
+More gesture support coming soon.
+Improved DLNA server detection and reliability - should work with many more DLNA servers now.
+
 # 0.33 (20191214)
 
 Added Bedtime mode.
