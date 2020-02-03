@@ -6,6 +6,11 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.44 (20200203)
+
+Added instructions panel when using Hand Tracking
+Fix for intructions webpage link.
+
 # 0.43 (20200203)
 
 Hand tracking improvements.
