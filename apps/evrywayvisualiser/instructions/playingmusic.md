@@ -32,7 +32,7 @@ Now, Your track should start playing!
 If you have a DLNA server, it should show up under Sources - select it, and browse
 to the right track.
 
-![playing_select_dlna](playing_select_dlna.png)
+![playing_select_dlna](playing_select_dlna2.png)
 
 If you don't see your DLNA server listed, or your music won't play, please get in touch
 and we'll do our best to make it work for you!
