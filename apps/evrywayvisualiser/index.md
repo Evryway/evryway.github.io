@@ -15,10 +15,10 @@ or a DLNA server on your network. Sit back, relax and let the music surround you
 [Get Visualiser on Itch today!](https://evryway.itch.io/evryway-visualiser)
 {:center}
 
-<center>{% include youtubep.html id="0xdSKZfU7QA" %}</center>
+<center>{% include youtubep.html id="fjph31d2IJI" %}</center>
 
 
-## [How to use Visualiser](instructions)
+## [How to use Visualiser](/apps/evrywayvisualiser/instructions/index)
 {:center}
 
 [Release notes](release_notes)
