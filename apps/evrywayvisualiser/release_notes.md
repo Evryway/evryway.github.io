@@ -6,6 +6,14 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.43 (20200203)
+
+Hand tracking improvements.
+Lots of bug fixes and tweaks to menus.
+Better snowfall!
+Update to Unity 2019.3.0f6, fixed all the input to use new XR input devices.
+Instructions update and new video!
+
 # 0.41 (20200123)
 
 Hand tracking! Oculus quest hand tracking now working.
