@@ -6,6 +6,10 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.46 (20200209)
+
+Fixed hand tracking thumbs-up for menu. Oops!
+
 # 0.45 (20200209)
 
 Added in transport menu - hold your hand palm-up to open it.
