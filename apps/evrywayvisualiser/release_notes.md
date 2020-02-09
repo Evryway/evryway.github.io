@@ -6,6 +6,11 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.45 (20200209)
+
+Added in transport menu - hold your hand palm-up to open it.
+
+
 # 0.44 (20200203)
 
 Added instructions panel when using Hand Tracking
