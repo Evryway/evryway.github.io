@@ -6,6 +6,10 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.47 (20200210)
+
+Improved transport menu - no more random presses with the wrong hand.
+
 # 0.46 (20200209)
 
 Fixed hand tracking thumbs-up for menu. Oops!
