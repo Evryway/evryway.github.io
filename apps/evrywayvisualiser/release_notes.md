@@ -6,6 +6,11 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.49 (20200222)
+
+New effect - chase lines. (more to come this month!)
+Hand colour can be changed in the settings menu.
+
 # 0.47 (20200210)
 
 Improved transport menu - no more random presses with the wrong hand.
