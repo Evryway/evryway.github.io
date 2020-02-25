@@ -6,6 +6,11 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.50 (20200225)
+
+Fixed bugs in effects and hand colour.
+Unity upgrades.
+
 # 0.49 (20200222)
 
 New effect - chase lines. (more to come this month!)
