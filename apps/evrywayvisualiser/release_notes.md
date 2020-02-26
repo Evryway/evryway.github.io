@@ -6,6 +6,10 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.51 (20200226)
+
+New effect : Ring Swirls.
+
 # 0.50 (20200225)
 
 Fixed bugs in effects and hand colour.
