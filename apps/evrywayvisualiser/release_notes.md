@@ -6,6 +6,10 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.53 (20200311)
+
+DLNA improvement - fix for Plex not responding in DLNA mode.
+
 # 0.51 (20200226)
 
 New effect : Ring Swirls.
