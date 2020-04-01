@@ -6,6 +6,10 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.57 (20200401)
+
+New effects. Shader graph effects and custom render textures - first tests.
+
 # 0.53 (20200311)
 
 DLNA improvement - fix for Plex not responding in DLNA mode.
