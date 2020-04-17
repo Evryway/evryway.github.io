@@ -6,6 +6,14 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.66 (20200417)
+
+Visualiser is now in Beta.
+Automatic beat matching algorithm now in place - not used on many effects yet, but I'll be moving most pulsing effects over soon.
+DLNA improvements.
+Unity upgrades.
+New effects (Fire flow, Laser show)
+
 # 0.57 (20200401)
 
 New effects. Shader graph effects and custom render textures - first tests.
