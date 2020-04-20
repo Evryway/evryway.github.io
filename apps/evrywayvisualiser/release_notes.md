@@ -6,6 +6,17 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.68 (20200420)
+
+Track transport hand menu - buttons now move based on your finger push. Nice!
+Happy 420!
+
+
+# 0.67 (20200420)
+
+Moved most of the effects over to using the pulse engine for tempo matching.
+Track transport now shows a button press - halfway where to making the buttons decent.
+
 # 0.66 (20200417)
 
 Visualiser is now in Beta.
