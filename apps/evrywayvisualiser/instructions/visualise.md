@@ -30,6 +30,8 @@ To bring up the track transport controls, hold either hand in front of you, palm
 This brings up a menu which you can interact with using your spare hand - simply press the buttons
 for next, previous, fast forward and rewind.
 
+If you keep your hands still for a while, they'll fade away. Move them to bring them back.
+
 ## [Using the MENU](#using-the-menu)
 
 from the MENU,
@@ -37,12 +39,11 @@ from the MENU,
 Select TRACKS for a list of music tracks. 
 * Browse sources by highlighting them with the pointer and clicking with the trigger.
 * You can use the joystick to scroll (just point away from the menu).
+* If you're using hand tracking, use your hand to point the ray at the menu item, then pinch to select. (this works the same as the oculus menu controls.)
 
 Select SETTINGS for application settings.
 
 Select INFO to find out additional details about the app.
-
-If you keep your hands still for a while, they'll fade away. Move them to bring them back.
 
 ---
 [(Back to instructions)](index)
