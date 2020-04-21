@@ -26,7 +26,9 @@ Give a thumbs-up gesture with your left hand (and hold it for a second) to bring
 
 Give a thumbs-up with your right hand to recentre your view.
 
-Track skip and select coming soon!
+To bring up the track transport controls, hold either hand in front of you, palm up, fingers pointing away from you.
+This brings up a menu which you can interact with using your spare hand - simply press the buttons
+for next, previous, fast forward and rewind.
 
 ## [Using the MENU](#using-the-menu)
 
