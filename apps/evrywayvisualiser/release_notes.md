@@ -6,6 +6,14 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.71 (20200525)
+
+Bedtime mode is now Recliner mode - added new recliner options.
+
+Lots of bug fixes and improvements.
+
+Updated to latest Unity and OVR Plugin versions.
+
 # 0.68 (20200420)
 
 Track transport hand menu - buttons now move based on your finger push. Nice!
