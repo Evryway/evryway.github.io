@@ -6,6 +6,10 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.72 (20200526)
+
+Added option to disable track info text, progress bars etc for a more immersive experience.
+
 # 0.71 (20200525)
 
 Bedtime mode is now Recliner mode - added new recliner options.
