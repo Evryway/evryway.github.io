@@ -6,6 +6,11 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.73 (20200603)
+
+Bug fix for menu position when the app is paused (backgrounding then resumed)
+Bug fix for track names being displayed when user prefs are set to "Never" for track info.
+
 # 0.72 (20200526)
 
 Added option to disable track info text, progress bars etc for a more immersive experience.
