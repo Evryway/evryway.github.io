@@ -6,6 +6,10 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.74 (20200609)
+
+Unity update to 2019.4.0 LTS
+
 # 0.73 (20200603)
 
 Bug fix for menu position when the app is paused (backgrounding then resumed)
