@@ -6,6 +6,10 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.75 (20200615)
+
+New effect : Dancers
+
 # 0.74 (20200609)
 
 Unity update to 2019.4.0 LTS
