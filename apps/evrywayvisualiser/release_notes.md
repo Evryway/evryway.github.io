@@ -6,6 +6,10 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.76 (20200616)
+
+New effects : More dancers!
+
 # 0.75 (20200615)
 
 New effect : Dancers
