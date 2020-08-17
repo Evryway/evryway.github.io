@@ -6,6 +6,12 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.79
+
+Update to Unity 2019.4.8f1, Update to OVR 19.
+Lots of system changes to support Unity 2020 XR Plugin architecture, lots of package updates, lots of regression fixes.
+Not many effects - once we're over to 2020, that's next.
+
 # 0.78
 
 Update to Unity 2019.4.3.
