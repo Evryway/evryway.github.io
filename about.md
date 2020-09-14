@@ -3,7 +3,7 @@ layout: page
 title: About Evryway
 permalink: /about/
 ---
-Evryway is currently working with a selection of clients, helping create XR experiences for training and learning.<br><br>
+Evryway is currently working with a selection of global clients (from government agencies to media creators) helping create XR experiences for training and learning.<br><br>
 
 Since 2016, Evryway has been creating and exploring the capabilities and potential of extended reality. We have experience of developing for Oculus (from DK1 through to the latest Oculus Quest), HTC Vive, Google Tango and ARCore, Apple ARKit, and more. We use Unity as our primary development environment, but we have also worked on native Android and Apple platforms.<br><br>
 
