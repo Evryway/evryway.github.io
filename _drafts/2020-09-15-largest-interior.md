@@ -22,12 +22,11 @@ do find it useful, and you improve upon it, please share the improvements!
 ## 1. Introduction
 
 One of the largest recent changes in Unity has been a move away from built-in code that talks to specific hardware
-(for example, Oculus headsets) to using a "Plugin" architecture, that allows manufacturers to create, and update,
+(for example, Oculus headsets) to using an "XR Plugin" architecture, that allows manufacturers to create, and update,
 their own code without the need for Unity to release a new version of the Unity Editor.
 
-The motivation behind this architecture (which I will be calling "Unity's XR Plugin architecture") is good - and
-the implementation is almost on par now with the previous way of doingthings (that I'm going to call
-"Unity's Legacy VR architecture") One area that has caused me problems, however, is the Boundary Data.
+The motivation behind this new architecture is good - and the implementation is almost on par now with the previous
+(legacy, and now deprecated) way of doing things. One area that has caused me problems, however, is the Boundary Data.
 
 When a headset user sets up a Boundary (or Guardian) area, they are drawing out a region in space that's safe for them
 to play inside. This normally helps the player avoid moving into unsafe areas - for example, running face first into
@@ -56,6 +55,7 @@ A rectangle is a four sided shape, with two pairs of parallel sides, each pair b
 may seem obvious, but it's worth being clear what everything means!)
 
 ![Figure 1](/assets/images/lir/lir_1.png){:width="640px" height="480px"}
+
 Figure 1: the largest interior rectangle in a concave polygon.
 
 Figure 1 shows a concave polygon - a set of points (shown as white dots) connected via edges (shown as
@@ -84,7 +84,7 @@ rectangle in polygon][ref_2]. Taking this as a basis, I created a working implem
 One approach to solving the problem is to divide the space covered by the polygon into an axis-aligned grid
 of rectangles, and then find the largest rectangle formed from these sub-rectangles.
 
-[step 1] requires finding the smallest area rectangle that contains the simple polygon.  
+[step 1](#step1) requires finding the smallest area rectangle that contains the simple polygon.  
 step 2 constructs the grid of rectangles, using each vertex of the polygon as the x and y coordinates for
 the grid lines.  
 step 3 optionally refines these rectangles (adding more rectangles, and hence more granularity to the resulting grid).  
@@ -98,9 +98,9 @@ Each of these steps is simple to understand, and all steps can be solved in a li
 from each step into the next.
 
 ## 3.1 Finding the smallest area rectangle
+{: #step1 }
 
-
-
+some stuff about finding the smallest area rectangle
 
 
 
