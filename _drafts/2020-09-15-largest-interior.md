@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Finding the Largest Interior Rectangle in a simple polygon
+title: Finding the Axis Aligned Largest Interior Rectangle in a simple polygon
 category: DevBlog
 tags: DevBlog
 keywords: Largest Interior Rectangle Simple Polygon Implementation Unity3d Mathematics
 ---
-This article presents a solution to the problem of finding the largest interior rectangle inside a simple polygon.
+This article presents a solution to the problem of finding the axis aligned largest interior rectangle inside a simple polygon.
 The solution is implemented using C# in Unity 3D. There's some mathematics, some pictures, and a link to a fully
 working implementation.
 
@@ -16,6 +16,8 @@ While I was looking for solutions to the problem, I found articles relating to m
 well as the particular problem I was trying to solve - the largest rectangular space inside my VR room boundary.
 As far as I'm aware, there is no trivial, fast solution to this problem, so this implementation might be useful. If you
 do find it useful, and you improve upon it, please share the improvements!
+
+![LIR](/assets/images/lir/lir_2.png "Largest Interior Rectangle"){:width="320px" height="320px" class="imgcenter"}
 
 ## 1. Introduction
 
@@ -37,31 +39,8 @@ Some of my prototypes use the rectangular area for specific reasons (for example
 Unfortunately, the latest XR Plugins do not give me that data any more - I can only access the full
 boundary data.
 
-As I went through the process of trying to find a simple solution, I also went through the process of researching
-how other people have solved this problem, and spent a fair few days looking at journal papers describing
-those solutions. For many of the problems I've been trying to solve over the last few years, this is a fairly
-standard process for me. I try and clarify to myself the problem I'm attempting to solve. I then try and learn
-what it's actually called by everyone else in the world (which may or not bear a small resemblance to the words
-and terms I am already aware of). Then I try and find working code examples (in C# first, as it's my current
-favourite language - then in Python, then in any other c-like language, then in any other programming language,
-then finally in some human language, normally with mathematical formulas).
-
-This has lead me to a startling insight:
-
-#### The best documentation for a solved software problem is a working implementation with source code.
-
-There are *many* kinds of documents describing methods to solve mathematical and numerical problems, but
-a working implementation not only tells you how to solve it - it does solve it.
-
-To that end, as a solution to this particular problem for anyone in the future, I'm going to attempt to construct
-a document containing that working implementation, in parallel with the algorithmic description.
-
-This might sound like a very verbose way to describe yet another "here's a way to do this" post. Quite why
-this is the typical formal approach to journal entries is something of a mystery to me, but that appears to
-be the times we're living in.
-
-I've lso creating a post describing the process of researching the solution, which I hope you find an interesting
-accompanyment to this solution. 
+This article details the algorithm and implementation specifics. Parallel to this, I've also written an article
+about the [process of solving this problem][solution], which you may find interesting.
 
 ## 2. Background
 
@@ -76,18 +55,56 @@ does not intersect itself, and has no holes.
 A rectangle is a four sided shape, with two pairs of parallel sides, each pair being the same length. (This
 may seem obvious, but it's worth being clear what everything means!)
 
-![LIR](/assets/images/lir/lir_1.png){:width="640px" height="480px"}
-
+![Figure 1](/assets/images/lir/lir_1.png){:width="640px" height="480px"}
 Figure 1: the largest interior rectangle in a concave polygon.
 
-Figure 1 shows 
+Figure 1 shows a concave polygon - a set of points (shown as white dots) connected via edges (shown as
+red lines) to form a closed simple concave polygon. Inside the polygon, there is a rectangular region
+showing the largest axis-aligned interior rectangle that does not cross a polygon edge or contain
+any of the polygon points.
 
 There appear to be a variety of different algorithms that solve variants of this problem, with related works
 going back to the 1970s that I've found. One of the best papers covering the problem is written by Karen Daniels,
 Victor Milenkovic and Dan Roth, titled [Finding the Largest Rectangle in Several Classes of Polygons][ref_1].
+The level of understanding required to implement their solutions is currently beyond me, however. I've read
+this paper through a few times now, and the necessary understanding still has not yet sunk in.
 
-I'll discuss the solution and implementation of this specific problem in [part 3](#part3), but first, I think
-it's valuable to talk about the bigger problem - researching papers on the internet.
+A brute-force solution is possible, but that process would be terribly slow (as it would involve testing
+every vertex against every polygon edge for every possible variation of certain properties). One assumes that
+if it was a viable solution, it would be documented and implemented - and the papers I have digested all discuss
+the brute-force solution in terms of O(n^4) or O(n^5) - in other words, with the number of vertices I'm hoping
+to work with (up to 1000) I would be looking at billions or trillions of calculations. 
+
+A paper that I did manage to understand, and the one I used as a basis for this implementation, was written
+by Zahraa Marzeh, Maryam Tahmasbi and Narges Mirehi, entitled [Algorith for finding the largest inscribed
+rectangle in polygon][ref_2]. Taking this as a basis, I created a working implementation in Unity using C#.
+
+## 3. Implementation
+
+One approach to solving the problem is to divide the space covered by the polygon into an axis-aligned grid
+of rectangles, and then find the largest rectangle formed from these sub-rectangles.
+
+[step 1] requires finding the smallest area rectangle that contains the simple polygon.  
+step 2 constructs the grid of rectangles, using each vertex of the polygon as the x and y coordinates for
+the grid lines.  
+step 3 optionally refines these rectangles (adding more rectangles, and hence more granularity to the resulting grid).  
+step 4 scans this rectangle grid, and determines whether a rectangle is inside or outside the polygon.  
+step 5 determines which rectangles are linked to (adjacent) other rectangles, in the horizonal and vertical directions.  
+step 6 uses this adjacency information to calculate, for each rectangle, the largest area rectangle that can be
+constructed by moving up and to the right.
+step 7 iterates all interior rectangles, calculating the areas for the adjoining rectangle regions, and tracking the best one.
+
+Each of these steps is simple to understand, and all steps can be solved in a linear fashion, feeding the results
+from each step into the next.
+
+## 3.1 Finding the smallest area rectangle
+
+
+
+
+
+
+
 
 ### 2.1. Finding the correct research
 
@@ -124,6 +141,9 @@ If you do manage to climb the knowledge tree
 {: #part3 }
 
 # References
-[Ref 1: ][ref_1]
+[Ref 1: Finding the Largest Rectangle in Several Classes of Polygons (Karen Daniels, Victor Milenkovic, Dan Roth)][ref_1]
+[Ref 2: Algorithm for finding the largest inscribed rectangle in polygon (Zahraa Marzeh, Maryam Tahmasbi, Narges Mirehi)][ref_2]
+
 
 [ref_1]: https://dash.harvard.edu/bitstream/handle/1/27030936/tr-22-95.pdf
+[ref_2]: https://journals.ut.ac.ir/article_71280.html
