@@ -207,7 +207,7 @@ from x[i] to x[i+1] in the horizontal axis, and from y[j] to y[j+1] in the verti
     cells = new int[xc,yc];
 ```
 
-One thing to note is that, in C#, 2D arrays can perform slower than 1D arrays. the example code uses
+One thing to note is that, in C#, 2D arrays can perform slower than 1D arrays. The example code uses
 2D arrays, but it's fairly simple to convert the 2D indices to a 1D index - instead of using
 ```cs
     var q = cells[i,j];
@@ -219,7 +219,8 @@ you could instead index into a 1D array like so:
 Slightly harder to read, slightly faster performance, possibly worth the trade-off.
 
 The resulting cells are shown here - you can easily see how each vertex results in an x-line and
-a y-line, extending to the bounding box of the polygon.
+a y-line, extending to the bounding box of the polygon. In this example case, some of the vertices
+generate the same lines in X and Y as other vertices - and that's ok.
 
 ![Figure 2](/assets/images/lir/lir_2.png "Figure 2: cell grid lines"){:width="640px"}
 
