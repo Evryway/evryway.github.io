@@ -94,7 +94,7 @@ the grid lines.
 [Step 5](#step5) determines which rectangles are linked to (adjacent) other rectangles, in the horizonal and vertical directions.  
 [Step 6](#step6) uses this adjacency information to calculate, for each rectangle, the largest area rectangle that can be
 constructed by moving up and to the right.  
-[Step 7](#step7) iterates all interior rectangles, calculating the areas for the adjoining rectangle regions, and tracking the best one.
+[Step 7](#step7) or, iterate all interior rectangles, calculating the areas for the adjoining rectangle regions, and tracking the best one.
 
 Each of these steps is simple to understand, and all steps can be solved in a linear fashion, feeding the results
 from each step into the next.
@@ -221,7 +221,7 @@ Slightly harder to read, slightly faster performance, possibly worth the trade-o
 The resulting cells are shown here - you can easily see how each vertex results in an x-line and
 a y-line, extending to the bounding box of the polygon.
 
-![Figure 2](/assets/images/lir/lir_2.png "Figure 2: cell grid lines"){:width="640px" height="480px"}
+![Figure 2](/assets/images/lir/lir_2.png "Figure 2: cell grid lines"){:width="640px"}
 
 
 ### 3.3 (optionally) Refine the grid
@@ -262,6 +262,21 @@ indices - and as soon as I'm equal to (or greater than!) the vertex coordinates,
     var eix = 0; while (xs[eix] < v0.x && eix < xs.Length-1) eix++;
     var eiy = 0; while (ys[eiy] < v0.y && eiy < ys.Length-1)  eiy++;
 
+```
+
+The original implementation simply found the start and end indices by using xs.IndexOf(v0.x) and
+ys.IndexOf(v0.y). This is no slower in the initial case (finding eix and eiy above), but because
+I'm potentially skipping values in xs and ys due to the epsilon check, there would be cases where
+the exact x or y coordinate would never be found. the while loops ensure we get close (close enough)
+by simply taking the next larger value if the exact value isn't found.
+
+The same process is used to find the end indices for each subseqent edge - however, the edge could be
+moving to the left, or down, inside the polygon, in which case we need to search backwards.
+
+This optimisation made a big difference to the running time of the algorithm.
+
+```cs
+
     for (int i = 0; i < vc; i++)
     {
 
@@ -293,7 +308,7 @@ indices - and as soon as I'm equal to (or greater than!) the vertex coordinates,
 
 Now, given my spans, I know which cells come into contact (or proximity) of that particular edge.
 
-![Figure 3](/assets/images/lir/lir_3.png "Figure 3: Iterior and exterior cells for an edge"){:width="640px" height="480px"}
+![Figure 3](/assets/images/lir/lir_3.png "Figure 3: Iterior and exterior cells for an edge"){:width="640px"}
 
 Figure 3 shows the cells spanned by the lower rightmost edge (drawn in white). Exterior, or crossing, cells are marked as red.
 Interior cells are marked as green. The bottom left two cells are marked as red - they are interior to the edge
@@ -430,7 +445,313 @@ be achieved by counting edge crossings, which would be more complex.
 
 ```
 
+The result of this sweep should be that every cell is marked interior or exterior. Figure 4
+shows this for our sample polygon.
 
+![Figure 4](/assets/images/lir/lir_4.png "Figure 4: All Interior and Exterior cells"){:width="640px"}
+
+You can clearly see in this image that the top row of the interior cells does not actually touch the
+top edges of the polygon, and could be moved upwards. **My implementation doesn't perform this adjustment,
+and it would likely be a worthwhile improvement**. However, the more vertices there are in the polygon,
+the more accurate (or close to the edge) the contacts become.
+
+### 3.5 Determining cell adjacency
+{: #step5 }
+
+The paper I'm using as a reference next describes determining cell adjacency.
+I'll describe the process, as I have implemented it - but I've found a slightly
+faster mechanism which I'm using to help calculate the areas which I'll describe next.
+
+The first action is to create two adjacency arrays - one for horizontal adjacency, and one for
+vertical adjacency. Next, every row (and every column) is scanned to calculate the maximum
+adjacency length for each cell.
+
+Every cell knows how many cells can be traversed going to the right (+X) - and how many cells can
+be traversed going up (+Y). If a cell has no interior neighbours, it will have no adjacency.
+
+```cs
+
+    var adjacency_horizontal = new int[xc, yc];
+    var adjacency_vertical = new int[xc, yc];
+
+    // calculate horizontal adjacency, row by row
+    for (int y = 0; y < yc; y++)
+    {
+        int span = 0;
+        for (int x = xc-1; x >= 0; x--)
+        {
+            if (cells[x,y] > 0) span++; else span = 0;
+            adjacency_horizontal[x, y] = span;
+        }
+    }
+
+    // calculate vertical adjacency, column by column.
+    for (int x = 0; x < xc; x++)
+    {
+        int span = 0;
+        for (int y = yc-1; y >= 0; y--)
+        {
+            if (cells[x,y] > 0) span++; else span = 0;
+            adjacency_vertical[x, y] = span;
+        }
+    }
+
+```
+The next step in the algorithm is to examine every cell, and create two vectors (called H and V)
+that describe how many cells can be traversed horizontally by each cell vertically above the
+root cell (these values go into the H vector); and how many cells can be traversed vertically
+by each cell to the right of the root cell (these values go into the V vector).
+
+It took me a little while to understand the value of these two vectors, so here's an image
+that shows the numbers for a specific cell.
+
+![Figure 5](/assets/images/lir/lir_5.png "Figure 5: H and V Vectors"){:width="640px"}
+
+Figure 5 shows an example cell as a root. The H vector describes how many cells can
+be traversed horizontally, each step up from the root cell -
+in this case, 3, then 2, then 1, 1, 1, then 3. the V vector describes how
+many cells can be traversed vertically, each step to the right from the root cell - in this case,
+6, then 2, then 1.
+
+this gives us an H of [3,2,1,1,1,3] and a V of [6,2,1].
+
+However, if we're trying to make the largest rectangle possible, we are limited by the maximum
+traversal of all of the rows underneath the relevant row, and all the columns to the left of
+the relevant column - which means the very top value of the H vector needs to be clamped to a 1,
+giving the H vector as [3,2,1,1,1,1].
+
+![Figure 6](/assets/images/lir/lir_6.png "Figure 6: Valid large rectangles"){:width="640px"}
+
+The result of combining the V and H vectors in this example gives the three possible large
+rectangles that can extend from the cell - one that is (1 by 6), one that is (2 by 2) and one that
+is (3 by 1). In Figure 6, these are shown as yellow, cyan and magenta outlines.
+
+The clamped cells on the top row are shown in red - it's clear that you can't create a rectangle
+containing only interior cells that includes them, because the rows below constrain movement
+to the right.
+
+```cs
+
+    // generate H vector - this is horizontal adjacency for each step up.
+    clir_hvec.Clear();
+    // look at horizontal adjacency.
+    // step up from our initial cell, and look right.
+
+    var h = adjacency_horizontal[x, y];
+    clir_hvec.Add(h);
+    for (int q = y+1; q < ayc; q++)
+    {
+        if (cells[x, q] != 1) break;
+        // each row can only be as large as the previous - a rectangle cannot push
+        // further out than a lower row.
+        h = Mathf.Min(adjacency_horizontal[x, q], h);
+        clir_hvec.Add(h);
+    }
+
+    // generate V vector. This is vertical adjacency for each step right.
+    clir_vvec.Clear();
+    // look at vertical adjacency.
+    // step right from our initial cell, and look up.
+
+    var v = adjacency_vertical[x, y];
+    clir_vvec.Add(v);
+    for (int p = x+1; p < axc; p++)
+    {
+        if (cells[p, y] != 1) break;
+        // each column can only be as large as the previous - a rectangle cannot push
+        // further up than a previous column.
+        v = Mathf.Min(adjacency_vertical[p, y], v);
+        clir_vvec.Add(v);
+    }
+
+
+```
+
+### 3.6 Determine the largest potential spanned area for each cell
+{: #step6 }
+
+You can also see that every time you "step" in one axis, you have to "step" in the other axis
+at the same time. It's possible to jump more than one cell in each direction, but you have to
+move at least one cell (because, for example, if the H vector was [3,3,1,1,1,1], then the equivalent
+V vector would be [6,2] - and the resulting span rectangles would be (1 by 6) and (3 by 2).
+
+This insight means you're actually working with only the unique values in either case - so
+going back to our original H vector, it results in [3,2,1] against the V of [6,2,1].
+Reversing either vector lets you create the spans by zipping the vectors, so for example reversing
+V to [1,2,6] gives a set of spans of (3 by 1), (2 by 2) and (1 by 6). That's our spans set!
+
+
+This code does not reduce the H vector to only the unique values - but it does check that the
+spans themselves are unique, which actually gives the same results. 
+
+```cs
+
+    spans.Clear();
+
+    // generate the set of valid spans.
+    int2 span_last = new int2(-1, -1);
+    for (int i = 0; i < clir_hvec.Count; i++)
+    {
+        int p = hvec[i];
+        int q = vvec[p-1];
+        int2 span = new int2(p, q);
+        if (span.x != span_last.x && span.y != span_last.y)
+        {
+            spans.Add(span);
+            span_last = span;
+        }
+    }
+
+```
+Given our spans set, we can trivially work out the area for each span, because we know the
+dimensions for each of the rectangles. Keeping track of the best area allows us to return the
+best found area in the whole cell set.
+
+```cs
+
+    for (int i = 0; i < spans.Count; i++)
+    {
+        var span = clir_spans[i];
+        var xstart = xs[x];
+        var xend = xs[x + span.x];
+        var ystart = ys[y];
+        var yend = ys[y + span.y];
+        var xsize = xend - xstart;
+        var ysize = yend - ystart;
+        var area = xsize * ysize;
+        if (area > best_area)
+        {
+            best_area = area;
+            best_span = span;
+            best_origin = new int2(x, y);
+        }
+    }
+
+```
+### 3.7 Iterate and calculate areas directly from cell side lengths, rather than spans
+{: #step7 }
+
+Noting that all potential largest interior rectangles result in equal length H and V vectors,
+and all distances are known before we generate the spans, means we can actually work directly with
+the span lengths (instead of calculating spans and then working back to the lengths).
+
+The code is very similar to the span sweep code in 3.5 and 3.6. First, calculate the
+lengths of spans (instead of adjacency).
+
+```cs
+
+    var lengths_horizontal = new float[xc,yc];
+    var lengths_vertical = new float[xc,yc];
+
+
+    for (int y = 0; y < yc; y++)
+    {
+        float span = 0;
+        for (int x = xc - 1; x >= 0; x--)
+        {
+            span = (cells[x, y] <= 0) ? 0 : span + xs[x + 1] - xs[x];
+            lengths_horizontal[x,y] = span;
+        }
+    }
+
+    for (int x = 0; x < xc; x++)
+    {
+        float span = 0;
+        for (int y = yc - 1; y >= 0; y--)
+        {
+            span = (cells[x, y] <= 0) ? 0 : span + ys[y + 1] - ys[y];
+            lengths_vertical[x,y] = span;
+        }
+    }
+
+```
+
+Then, iterate every cell, using the vertical and horizonal lengths directly.
+
+```cs
+
+    for (int y = 0; y < yc; y++)
+    {
+        for (int x = 0; x < xc; x++)
+        {
+            var iv = cells[x,y];
+            if (iv == 0) continue;
+
+            var h = lengths_horizontal[x,y];
+            var v = lengths_vertical[x,y];
+
+            // if the best POSSIBLE area (which may not be valid!)
+            // is smaller than the best area, then we don't need to run any further tests.
+            if (h * v < best_area) continue;
+
+            // generate H vector - this is horizontal spans for each step up.
+            hspans.Clear();
+            // look at horizontal spans.
+            // step up from our initial cell, and look right.
+
+            hspans.Add(h);
+            for (int q = y+1; q < yc; q++)
+            {
+                if (cells[x,q] == 0) break;
+                var h2 = lengths_horizontal[x,q];
+                if (h2 >= h) continue;
+                h = h2;
+                hspans.Add(h);
+            }
+
+            // generate V vector. This is vertical spans for each step right.
+            vspans.Clear();
+            // look at vertical spans.
+            // step right from our initial cell, and look up.
+
+            vspans.Add(v);
+            for (int p = x+1; p < xc; p++)
+            {
+                if (cells[p,y] == 0) break;
+                var v2 = lengths_vertical[p,y];
+                if (v2 >= v) continue;
+                v = v2;
+
+                vspans.Add(v);            
+            }
+
+            // reverse the v spans list - this lets us trivially combine the correct
+            // spans for each rectangle combination with the same list index.
+            vspans.Reverse();
+
+            for (int i = 0; i < hspans.Count; i++)
+            {
+                float hl = hspans[i];
+                float vl = vspans[i];
+                float area = hl * vl;
+                if (area > best_area)
+                {
+                    best_area = area;
+                    best_origin = new Vector2(xs[x], ys[y]);
+                    best_span = new Vector2(hl, vl);
+                }
+            }
+
+        }
+    }
+
+```
+
+One issue I found was generating the H and V vectors occasionally gave results where the vector
+lengths were mismatched (for example H would contain 16 values and V would contain 15). After matching
+up the results to the Adjacency Span version, I found this was due to numerical inaccuracies, and
+introduced the epsilon check when generating the initial xs and ys arrays. Values in there that are
+incredibly close together can result in identical lengths in the scan code above. In the case where
+the vectors come through mismatched, using the adjacency data instead is an option.
+
+Finally, the check to see if the largest possible area was already smaller than the best area made
+a huge difference to the runtime of the algorithm. There may be other good optimizations sitting in
+there still.
+
+# 4. Conclusion
+
+And there you have it - [Axis Aligned Largest Interior Rectangle][the_repo]. I hope someone finds this as useful
+as I will, and I'd love any feedback on the code and writeup.
 
 
 # References
