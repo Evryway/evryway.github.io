@@ -40,7 +40,7 @@ Unfortunately, the latest XR Plugins do not give me that data any more - I can o
 boundary data.
 
 This article details the algorithm and implementation specifics. Parallel to this, I've also written an article
-about the [process of solving this problem][solution], which you may find interesting.
+about the [process of solving this problem](/a-tale-of-two-problems/), which you may find interesting.
 
 ## 2. Background
 
