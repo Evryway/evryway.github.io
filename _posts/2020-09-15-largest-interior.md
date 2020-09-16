@@ -220,7 +220,7 @@ Slightly harder to read, slightly faster performance, possibly worth the trade-o
 
 The resulting cells are shown here - you can easily see how each vertex results in an x-line and
 a y-line, extending to the bounding box of the polygon. In this example case, some of the vertices
-generate the same lines in X and Y as other vertices - and that's ok.
+share lines in X and Y with other vertices - and that's ok.
 
 ![Figure 2](/assets/images/lir/lir_2.png "Figure 2: cell grid lines"){:width="640px"}
 
@@ -231,12 +231,15 @@ generate the same lines in X and Y as other vertices - and that's ok.
 If there are not enough vertices in your simple polygon, you may end up with large cells that don't come close
 to the boundary of the polygon. One option here is to detect every intersection between a polygon edge and
 the X/Y lines from each vertex, and then insert these new points into the vertex array (requiring a re-sort,
-and then a regeneration of the cells). I've found that with enough points, this isn't necessary, but it will
-give more accurate results (at the cost of potentially much more work).
+and then a regeneration of the cells). I've found that with enough points, this isn't really necessary,
+but it will give more accurate results (at the cost of potentially much more work). Note figure 4 for an
+example where it's clearly not refined enough.
 
 Another alternative is to downsize the number of cells (by reducing the xs and ys arrays to fewer values,
 for example). Again, I've not used this method - I found simply reducing the number of points in my original
-polygon achieved perfectly adequate results for my use case.
+polygon achieved perfectly adequate results for my use case. If your source polygon is heavily biased in
+a particular direction in terms of vertex density, you might find cell reduction preferable to simply
+stripping vertices from the polygon.
 
 ### 3.4 Scan the grid for interior and exterior cells
 {: #step4 }
