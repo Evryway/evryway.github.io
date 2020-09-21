@@ -6,6 +6,10 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.81 (20200921)
+
+Maintenance update.
+
 # 0.80
 
 Update to OVR 20.
