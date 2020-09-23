@@ -6,6 +6,10 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.84 (20200923)
+
+Added support for Oculus system "Menu" hand gesture (additional to thumbs-up hand gesture).
+
 # 0.83 (20200923)
 
 Unity 2020 version. That was a proper slog, I can tell you. So many bugs logged, so many heads banged into desks.
