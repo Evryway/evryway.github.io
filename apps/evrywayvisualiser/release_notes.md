@@ -6,6 +6,11 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.83 (20200923)
+
+Unity 2020 version. That was a proper slog, I can tell you. So many bugs logged, so many heads banged into desks.
+But we're up and running ;)
+
 # 0.81 (20200921)
 
 Maintenance update.
