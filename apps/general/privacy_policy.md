@@ -4,6 +4,9 @@ title: Evryway General Application Privacy Policy
 permalink: /apps/general/privacy_policy
 ---
 
+Version 1.0.20201002
+
+
 Evryway applications without a specific privacy policy should reference this policy directly.
 
 Evryway applications may capture and store user-specific information such as app-specific
