@@ -32,6 +32,10 @@ Any information recieved from Evryway applications may be stored in persistent s
 This information will be used only to enable the product to function, or to improve the
 product, and can be deleted on request.
 
+We may update our Privacy Policy from time to time. Thus, we advise you to review this page
+periodically for any changes. We will notify you of any changes by posting the new Privacy Policy
+on this page. These changes are effective immediately, after they are posted on this page.
+
 If you have any questions about this policy, or would like to request that any stored
 information is deleted, please [email Evryway](mailto:hi@evryway.com).
 
