@@ -6,6 +6,12 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.87 (20201014)
+
+Quest 2 version! Some of the Effect Graph effects were using Alpha blending, which seems to perform terribly on Quest 2.
+I've switched them over to Additive instead, they look better and don't drop frames.
+Just about everything else looks like it's working fine.
+
 # 0.84 (20200923)
 
 Added support for Oculus system "Menu" hand gesture (additional to thumbs-up hand gesture).
