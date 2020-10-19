@@ -6,6 +6,17 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.89 (20201019)
+
+90 Hz mode now supports quick switching (set the mode in Sidequest, press the power button, wait for the beep,
+press the power button again).
+
+# 0.88 (20201017)
+
+Quest 2 is now properly supported!
+90 Hz mode!
+Quest 2 bug fixes, including re-enabling local file system support.
+
 # 0.87 (20201014)
 
 Quest 2 version! Some of the Effect Graph effects were using Alpha blending, which seems to perform terribly on Quest 2.
