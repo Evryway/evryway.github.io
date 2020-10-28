@@ -6,6 +6,10 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.90 (20201028)
+
+New effect : Kaleidoscope
+
 # 0.89 (20201019)
 
 90 Hz mode now supports quick switching (set the mode in Sidequest, press the power button, wait for the beep,
