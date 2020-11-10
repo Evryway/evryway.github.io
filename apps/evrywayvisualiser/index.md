@@ -37,3 +37,7 @@ or a DLNA server on your network. Sit back, relax and let the music surround you
 [Release notes](release_notes)
 {:center}
 
+<br>
+<br>
+Come talk to us on [Discord!](https://discord/gg/6CUbFxw)
+{:center}

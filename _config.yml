@@ -24,12 +24,8 @@ permalink: /:title/
 
 footer-links:
   email: hi@evryway.com
-  patreon: 3510689
-  github: 
-  rss: rss # just type anything here for a working RSS icon
   twitter: evryway
   youtube: channel/UC6XE5DBPf_Eyo5clCjMHMIQ
-  googleplus: # anything in your profile username that comes after plus.google.com/
 
 disqus: evryway
 google_analytics: UA-74411745-1
