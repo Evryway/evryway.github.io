@@ -15,7 +15,7 @@ Evryway ADB Control allows you to control your android devices from inside the U
 
 ## First steps
 
-Install the package from the Asset Store.
+Install the package from the [Asset Store](https://assetstore.unity.com/packages/slug/184021).
 If you wish, you can move the ADBControl directory anywhere in your project.
 You should have an "Evryway/ADB Control" menu option - select it, and the "ADB Control" window will appear.
 
