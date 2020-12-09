@@ -6,6 +6,16 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.94 (20201209)
+
+Improved hand tracking (re-write of all input tracking to poll transforms multiple times per frame, removed legacy
+XR calls and cleaned up all XR device interactions).
+
+# 0.92 (20201110)
+
+Demo mode released!
+
+
 # 0.90 (20201028)
 
 New effect : Kaleidoscope
