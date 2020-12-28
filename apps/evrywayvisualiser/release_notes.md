@@ -6,6 +6,12 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.102 (20201228)
+
+Latest Oculus SDK (23.1, 1.55.1) and Unity updates.
+Various profile bug fixes, including incorrectly storing the display refresh rate on Quest 2.
+Merry Christmas!
+
 # 0.94 (20201209)
 
 Improved hand tracking (re-write of all input tracking to poll transforms multiple times per frame, removed legacy
