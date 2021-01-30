@@ -7,17 +7,25 @@ permalink: /apps/evrywayvisualiser/instructions/visualise
 
 # [How to visualise](#how-to-visualise)
 
+(Correct as of Version 0.107)
+
 Visualiser will begin playing a demo song. Use the Tracks menu to play your preferred music.
 
 ## Using your Touch Controllers
 
-Press the MENU button on the left controller to bring up the menu at any point.
+Press the MENU button on the left controller to bring up the menu at any point. the A and X buttons also activate the menu.
 
-use the LEFT STICK to skip the current track forwards and backwards.
+using the LEFT STICK,
+* press Left or Right to skip the current track backwards or forwards.
+* press Up or Down to select the next or previous tracks.
+* press Menu or X to bring up the menu.
+* press Y to recentre your view.
 
-use the RIGHT STICK to skip to previous and next track.
-
-use the RIGHT GRIP to recentre your view.
+using the RIGHT STICK
+* press Left or Right to select the previous or next effect.
+* press Down to pause or unpause the effect cycler.
+* press A to bring up the menu.
+* press B to recentre your view.
 
 
 ## Using your hands (hand tracking)
@@ -28,7 +36,7 @@ Give a thumbs-up with your right hand to recentre your view.
 
 To bring up the track transport controls, hold either hand in front of you, palm up, fingers pointing away from you.
 This brings up a menu which you can interact with using your spare hand - simply press the buttons
-for next, previous, fast forward and rewind.
+for next, previous, fast forward and rewind for your music track, or next, previous and pause/play for the effects.
 
 If you keep your hands still for a while, they'll fade away. Move them to bring them back.
 
