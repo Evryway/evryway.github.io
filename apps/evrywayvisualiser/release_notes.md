@@ -6,6 +6,11 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.106 (20210130)
+
+Effect cycler rewrite - effects can now be controlled via hand menu and right stick.
+All music control moved to left stick.
+
 # 0.102 (20201228)
 
 Latest Oculus SDK (23.1, 1.55.1) and Unity updates.
