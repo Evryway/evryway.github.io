@@ -6,6 +6,11 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.107 (20210130)
+
+Changed Menu buttons (now menu, A and X) and Recenter buttons (now B and Y, used to be right grip).
+Bug fixes for hand transport menu, improved menu feedback, updated controls information pane.
+
 # 0.106 (20210130)
 
 Effect cycler rewrite - effects can now be controlled via hand menu and right stick.
