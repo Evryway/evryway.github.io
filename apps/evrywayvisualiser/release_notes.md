@@ -6,6 +6,10 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.108 (20210201)
+
+Bug fix for right thumbs-up activating recenter tracking.
+
 # 0.107 (20210130)
 
 Changed Menu buttons (now menu, A and X) and Recenter buttons (now B and Y, used to be right grip).
