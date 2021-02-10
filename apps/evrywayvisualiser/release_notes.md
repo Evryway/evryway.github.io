@@ -6,6 +6,24 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.120 (20210210)
+
+Loads of changes for quality and user experience!
+
+Pause and resume - taking off the headset, moving outside the guardian or
+bringing up the system menus now pauses the music and effects. resuming,
+putting the headset back on and returning to the guardian space automatically
+resumes music and effects.
+
+Memory and performance improvements - audio tracks are now cached where possible.
+If you're playing the same track and you loop tracks, they won't be re-loaded
+from source (or re-downloaded from DLNA) - they'll simply play again. Low memory
+will flush all cached tracks.
+
+This build is pretty much a full rewrite of all the audio loading and streaming,
+so please get in touch if you find anything doesn't work for you!
+
+
 # 0.108 (20210201)
 
 Bug fix for right thumbs-up activating recenter tracking.
