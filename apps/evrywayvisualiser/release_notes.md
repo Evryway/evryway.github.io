@@ -6,6 +6,11 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.124 (20210301)
+
+Maintenance and bug fixes. Latest Oculus plugin (1.81) and SteamVR plugin updates.
+Oh yeah, there's a PC version coming "real soon now TM". Shout if you want an early look.
+
 # 0.120 (20210210)
 
 Loads of changes for quality and user experience!
