@@ -5,13 +5,45 @@ permalink: /apps/evrywayvisualiser/instructions/installation
 ---
 [(Back to instructions)](index)
 
-# [How to download](#how-to-download)
+# [How to purchase](#how-to-download)
 
 [Evryway Visualiser is currently available via Itch.io.](https://evryway.itch.io/evryway-visualiser)
 
+And now - [Evryway Visualiser is available on Oculus App Lab Too!](https://www.oculus.com/experiences/quest/3485430611585621/?utm_source=evryway)
+
+<hr>
 # [How to install](#how-to-install)
 
-## Via SideQuest
+## [Install thru Oculus App Lab](#install-applab)
+
+If you have purchased directly from the Oculus store, you should already have the app on your device. Congratulations,
+and thanks for your purchase!
+
+<hr>
+
+## [Install thru Itch.io](#install-itch)
+
+Your Itch purchase will come with an Oculus App Lab Key. This is the simplest way to install the app.
+
+Go to the Itch.io site, and browse to the "Download" link for Visualiser.
+
+![Key From Itch1](itch_download_button.png){:height="50%" width="50%"}
+
+Click the "Get Oculus Key" button
+
+![Key From Itch2](itch_purchase_key.png){:height="50%" width="50%"}
+
+take a copy of the 25-letter key that appears.
+
+Next, go visit the [Oculus Redeem Code page](https://secure.oculus.com/redeem-code/), and enter the key.
+
+![Key From Itch3](oculus_redeem_code.png){:height="50%" width="50%"}
+
+You should now have the app installed via App Lab.
+
+<hr>
+
+## [Install the APK from Itch using SideQuest](#install-sq)
 
 Ensure you've got the latest version of [SideQuest](https://sidequestvr.com/#/) installed.
 
@@ -32,12 +64,12 @@ If you're on the latest version you may see "Buy on Itch" or "View On Itch" inst
 
 Next, click "Download"
 
-![install via itch1](install_sq_itch1.png)
+![install via itch1](install_sq_itch1.png){:height="50%" width="50%"}
 
  then pick the latest release APK.
 SideQuest will download and install it for you.
 
-![install via itch2](install_sq_itch2.png)
+![install via itch2](install_sq_itch2.png){:height="50%" width="50%"}
 
 If you don't see the "Download" button on the Itch.io page, and you've already claimed a valid download key,
 make sure you're logged in to Itch.Io while in Sidequest. You don't ever need to purchase more than once!
