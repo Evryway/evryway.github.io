@@ -14,9 +14,9 @@ permalink: /apps/evrywayvisualiser/instructions/installation
 </iframe>
 
 
-And now - [Evryway Visualiser is available on Oculus App Lab Too!](https://www.oculus.com/experiences/quest/3485430611585621/?utm_source=evryway)
+And now - Evryway Visualiser is available on Oculus App Lab Too!
+[![AppLab Widget](../visualiser_applab_widget.svg)](https://www.oculus.com/experiences/quest/3485430611585621/?utm_source=evryway.com)
 
-![AppLab Splash](../visualiser_applab_splash.svg)
 
 <hr>
 # [How to install](#how-to-install)
