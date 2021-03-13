@@ -13,7 +13,11 @@ or a DLNA server on your network. Sit back, relax and let the music surround you
 {:center}
 
 {:center: style="text-align:center"}
-[Get Visualiser on Oculus Store!](https://www.oculus.com/experiences/quest/3485430611585621/?utm_source=evryway)
+[Get Visualiser on Oculus Store!](https://www.oculus.com/experiences/quest/3485430611585621/?utm_source=evryway.com)
+{:center}
+
+{:center: style="text-align:center"}
+![AppLab Splash](visualiser_applab_splash.svg)
 {:center}
 
 {:center: style="text-align:center"}

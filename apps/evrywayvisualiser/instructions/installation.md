@@ -9,7 +9,14 @@ permalink: /apps/evrywayvisualiser/instructions/installation
 
 [Evryway Visualiser is currently available via Itch.io.](https://evryway.itch.io/evryway-visualiser)
 
+<iframe src="https://itch.io/embed/507905?bg_color=000000&amp;fg_color=f3fde7&amp;link_color=fa5c5c&amp;border_color=333333" width="552" height="167" frameborder="0">
+<a href="https://evryway.itch.io/evryway-visualiser">Evryway Visualiser by Evryway</a>
+</iframe>
+
+
 And now - [Evryway Visualiser is available on Oculus App Lab Too!](https://www.oculus.com/experiences/quest/3485430611585621/?utm_source=evryway)
+
+![AppLab Splash](../visualiser_applab_splash.svg)
 
 <hr>
 # [How to install](#how-to-install)
