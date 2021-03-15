@@ -6,6 +6,19 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.130 (20210315)
+
+Important! This version of Visualiser (0.130) is also compatible with Oculus App Lab.
+To allow this, the bundle ID is different to previous versions. If you have the old version on the headset,
+you can now uninstall it - look for "com.Evryway.EvrywayVisualiser" under Unknown Sources,
+and select "uninstall".
+
+The new bundle ID is "com.evryway.visualiser.oal" - if you see that version, keep it!
+
+With this version (and all future versions) you can now install the app via the Oculus Store,
+and that's the recommended way to do things now. Simply grab an Oculus Key, redeem the code
+on the Oculus store, and install. 
+
 # 0.124 (20210301)
 
 Maintenance and bug fixes. Latest Oculus plugin (1.81) and SteamVR plugin updates.
