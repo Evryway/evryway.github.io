@@ -6,6 +6,10 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.132 (20210320)
+
+Improved permissions handling on Quest when reading local device storage.
+
 # 0.130 (20210315)
 
 Important! This version of Visualiser (0.130) is also compatible with Oculus App Lab.
