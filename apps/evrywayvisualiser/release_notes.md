@@ -6,6 +6,10 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.134 (20210327)
+
+Various bug fixes, including effects enabled/disabled handling.
+
 # 0.132 (20210320)
 
 Improved permissions handling on Quest when reading local device storage.
