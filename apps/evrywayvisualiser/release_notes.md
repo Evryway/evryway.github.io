@@ -6,6 +6,10 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.136 (20210331)
+
+Maintenance update. Unity 2020.3, OVR integration V25.0, switch to Vulkan.
+
 # 0.134 (20210327)
 
 Various bug fixes, including effects enabled/disabled handling.
