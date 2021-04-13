@@ -38,5 +38,5 @@ or a DLNA server on your network. Sit back, relax and let the music surround you
 
 <br>
 <br>
-Come talk to us on [Discord!](https://discord/gg/6CUbFxw)
+Come talk to us on [Discord!](https://discord.gg/6CUbFxw)
 {:center}
