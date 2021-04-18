@@ -6,6 +6,13 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.138 (20210418)
+
+Switch back to GLES - that's what I get for not testing properly on Quest 1. Vulkan is doing something nasty
+with the background texture, not being cleared properly or something.
+
+Added new effect - Multitrails! first pass in place, working on performance for a variety of new effects.
+
 # 0.136 (20210331)
 
 Maintenance update. Unity 2020.3, OVR integration V25.0, switch to Vulkan.
