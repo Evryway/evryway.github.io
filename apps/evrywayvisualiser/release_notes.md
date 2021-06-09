@@ -6,6 +6,12 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.141 (20210609)
+
+New Effect : Heartbeat Hex.
+New Hand Effect : Smoke.
+Performance improvements in various effects, bug fixes, latest Unity (21.11) and OVR (29).
+
 # 0.138 (20210418)
 
 Switch back to GLES - that's what I get for not testing properly on Quest 1. Vulkan is doing something nasty
