@@ -6,6 +6,17 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.151 (20211108)
+
+Maintenance update. Unity 2021.2, OVR integration V33, re-switch to Vulkan.
+So many bug fixes, you just wouldn't believe (and most of them were not in Visualiser).
+Bloom disabled on Quest 1, as Vulkan goes crazy with PP Bloom enabled on Q1. Unfortunately,
+Unity broke GLES 3.0 for Unity 2021.2 and Visual Effect Graph on Android. If that gets fixed,
+I may revert and resolve the issue.
+
+This release has taken nearly three months due to so many things breaking as I try and move up
+the various toolchains. I hope to get some actual content in the next releases!
+
 # 0.141 (20210609)
 
 New Effect : Heartbeat Hex.
