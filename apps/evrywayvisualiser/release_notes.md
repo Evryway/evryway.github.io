@@ -6,6 +6,9 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.154 (20211230)
+Maintenance update. Unity 2021.2.7, OVR 35 (1.67)
+
 # 0.151 (20211108)
 
 Maintenance update. Unity 2021.2, OVR integration V33, re-switch to Vulkan.
