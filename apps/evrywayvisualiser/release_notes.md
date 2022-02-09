@@ -6,6 +6,9 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.157 (20220209)
+Maintenance update. Unity 2021.2.10, OVR 37 (1.69)
+
 # 0.155 (20220112)
 Added thumb view restrictions. Users who interact with intruments during a session found the menus triggering
 intermittently. The new Loose and Tight thumb up view restrictions lock out menu activation if the thumb is
