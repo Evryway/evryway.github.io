@@ -6,6 +6,17 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.160 (20220214)
+
+Quest and Quest 2 devices now use the android MediaStore API for on-device tracks. This should work exactly as it
+did previously, but allows for more restricted permissions (READ rather than WRITE). Lots of changes under the hood,
+so if you find any issues with playing on-device music, please get in touch! If you add new tracks to your device,
+you'll currently need to restart it for MediaStore to re-index. I may look at adding an option to manually refresh
+if enough folks request it.
+Various bug fixes, including invisible touch controller hand models (since 0.155).
+Unity version 2021.2.11
+
+
 # 0.157 (20220209)
 Maintenance update. Unity 2021.2.10, OVR 37 (1.69)
 
