@@ -6,6 +6,11 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.163 (20220216)
+
+Switched to using Unity's Addressables system. This is the first in a set of steps with the goal of allowing
+plugin effects.
+
 # 0.160 (20220214)
 
 Quest and Quest 2 devices now use the android MediaStore API for on-device tracks. This should work exactly as it
