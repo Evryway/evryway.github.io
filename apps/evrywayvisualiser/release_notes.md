@@ -6,6 +6,14 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.170 (20220703)
+
+Bug Fix: Long tracks (over an hour) played from the Quest filesystem caused an out of memory issue. Thanks to PBenter for
+spotting and providing test tracks.
+
+Maintenance: Unity 2021.3.5, OVR 41 (1.73)
+
+
 # 0.163 (20220216)
 
 Switched to using Unity's Addressables system. This is the first in a set of steps with the goal of allowing
