@@ -6,6 +6,9 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.175 (20220926)
+Maintenance update. Unity 2022.1.17.
+
 # 0.170 (20220703)
 
 Bug Fix: Long tracks (over an hour) played from the Quest filesystem caused an out of memory issue. Thanks to PBenter for
