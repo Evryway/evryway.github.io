@@ -1,18 +1,29 @@
 name: Evryway
-title: Evryway
-url: http://www.evryway.com
-baseurl: ""
+title: Evryway 
+email: hi@evryway.com
 description: Shiny things for your delectation
 avatar: /assets/evryway_logo.png
-email: hi@evryway.com
-
-keywords: VR, virtual reality, tim swan, VR prototypes, AR, augmented reality, mixed reality, holodeck
+baseurl: ""
+url: http://www.evryway.com
+twitter_username: evryway
+github_username: evryway
 
 # Build settings
 theme: minima
 plugins:
-  - jekyll-sitemap
   - jekyll-feed
+  - jekyll-sitemap
+
+discus: evryway
+google_analytics: UA-74411745-1
+
+footer-links:
+  email: hi@evryway.com
+  twitter: evryway
+  youtube: channel/UC6XE5DBPf_Eyo5clCjMHMIQ
+  mastodon:
+    server: mastodon.gamedev.place
+    username: evryway
 
 sass:
   style: :expanded
@@ -22,14 +33,7 @@ highlighter: rouge
 encoding: UTF-8
 permalink: /:title/
 
-footer-links:
-  email: hi@evryway.com
-  twitter: evryway
-  youtube: channel/UC6XE5DBPf_Eyo5clCjMHMIQ
-
-disqus: evryway
-google_analytics: UA-74411745-1
-
+keywords: VR, virtual reality, tim swan, VR prototypes, AR, augmented reality, mixed reality, holodeck
 
 # Exclude from processing.
 # The following items will not be processed, by default.
