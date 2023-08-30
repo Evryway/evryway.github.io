@@ -6,6 +6,20 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.180 (20230830)
+
+NOTICE FOR QUEST 1 USERS
+
+due to Meta making the Quest 1 hardware obsolete, future updates will most likely be restricted to Quest 2 and
+future hardware. This release may well be the last version for Quest 1 hardware. Please do get in touch if you are
+running Visualiser on Quest 1 and find any breaking issues!
+
+Bug fix: menu system gesture now working again.
+Performance: lots of performance tweaks.
+
+Maintenance: Unity 2022.3.7, OVR 50 (1.82)
+
+
 # 0.175 (20220926)
 Maintenance update. Unity 2022.1.17.
 
