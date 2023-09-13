@@ -26,7 +26,7 @@ Of course, it's hard to sell something more than once, so after a few years, Uni
 
 One can't be too hard on this model - after all, if you can get away with it, why not? All of the good companies are doing it (Adobe, Autodesk, Oracle, etc). And supporting a product as complicated and wide ranging as Unity does require investment. Without some form of revenue share, developers can be making huge amounts of money off the products created with the tools, and Unity doesn't get a sniff of that.
 
-** Can you imagine if you wrote a great book in Microsoft Office and they started demanding a cut of the revenue? Hold that thought.**
+**Can you imagine if you wrote a great book in Microsoft Office and they started demanding a cut of the revenue? Hold that thought.**
 
 Right about this time, it also became clear that actually, this wasn't really their primary revenue stream. The primary revenue stream was Enterprise licences. Charge large teams large amounts of money for support, and ka-ching. 
 
