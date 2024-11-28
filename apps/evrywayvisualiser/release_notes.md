@@ -6,6 +6,17 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 0.193 (20241127)
+
+Rework to use OpenXR under the hood.
+
+This has been an interesting challenge, but hopefully it's now all done!
+Please get in touch if you have any issues.
+
+Bug fixes: Lots of things ...
+Maintenance: Unity 2022.3.50, OpenXR 1.13.1
+
+
 # 0.180 (20230830)
 
 NOTICE FOR QUEST 1 USERS
