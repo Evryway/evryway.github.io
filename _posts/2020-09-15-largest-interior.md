@@ -244,6 +244,15 @@ stripping vertices from the polygon.
 ### 3.4 Scan the grid for interior and exterior cells
 {: #step4 }
 
+**20241210 - IMPORTANT UPDATE!**
+
+Section 3.4 implementation here is flawed, and I've created a new post about this.
+
+
+[Read all about LIR Version 2 here!][new_improved]
+
+**Old implementation follows for history - skip to [section 3.5](#step5) to continue the journey.**
+
 Next, we have to look at every cell, to see if it's inside the polygon (interior) or outside the polygon
 (exterior). Any cell that is crossed by a polygon edge is classed as exterior.
 
@@ -765,5 +774,7 @@ as I will, and I'd love any feedback on the code and writeup.
 
 [ref_1]: https://dash.harvard.edu/bitstream/handle/1/27030936/tr-22-95.pdf
 [ref_2]: https://journals.ut.ac.ir/article_71280.html
+
+[new_improved]: https://www.evryway.com/largest-interior-2/
 
 [the_repo]: https://github.com/Evryway/lir
