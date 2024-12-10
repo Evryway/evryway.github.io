@@ -118,6 +118,8 @@ the cell adjacency information and cell areas.
 
 Thanks to all the folks who have reported issues so far, your feedback is much appreciated!
 
+If you want to use the code, take a look at [the repo][the_repo].
+
 I'm certain there will be many more problems found - if you use the code and it doesn't work for you, make some noise.
 I can't promise I'll fix it, but I'll certainly try.
 
