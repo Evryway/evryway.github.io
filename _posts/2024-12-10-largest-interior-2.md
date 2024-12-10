@@ -47,7 +47,7 @@ to the polygon using the crossing information as described in more detail below.
 ## Cell crossing
 
 Polygon edges can interact with cells in a few different ways. Firstly, it can miss a cell entirely, in which case that cell
-is "inside" or "outside" the edge - but it may be crossed by any other cell, so the resulting cell state is unknown
+is "inside" or "outside" the edge - but it may be crossed by any other edge, so the resulting cell state is unknown
 until all other edges are tested.
 
 Secondly, The edge can cross the cell - some portion of the polygon edge is inside the cell edges. In this case, the
