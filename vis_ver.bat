@@ -1,2 +1,2 @@
-gvim apps\EvrywayVisualiser\release_notes.md
+vim apps\EvrywayVisualiser\release_notes.md
 

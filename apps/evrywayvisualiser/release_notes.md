@@ -6,6 +6,18 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 2.0.2 (20251206)
+
+Fixed device tracking offset for OpenXR relative mode, and adjusted various assets to match.
+
+# 2.0.1 (20251206)
+
+Security update for Unity.
+
+Bug fixes: Lots of things ...
+Maintenance: Unity 2022.3.62f2
+
+
 # 0.193 (20241127)
 
 Rework to use OpenXR under the hood.
