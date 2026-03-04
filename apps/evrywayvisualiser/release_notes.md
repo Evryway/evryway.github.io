@@ -6,6 +6,12 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 2.0.4 (20260304)
+
+Update to Unity 6.3.8f1.
+Fixed bug where FFT note buckets were higher than FFT available top frequency. This caused
+many visual effects to stop tracking audio correctly in Unity6.
+
 # 2.0.2 (20251206)
 
 Fixed device tracking offset for OpenXR relative mode, and adjusted various assets to match.
