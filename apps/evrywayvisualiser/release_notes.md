@@ -6,6 +6,13 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 2.1.1 (20260515)
+
+Passthrough mode now available in the device settings menu.
+Update to Unity 6.3.15f1.
+Bug fixes: various!
+
+
 # 2.0.4 (20260304)
 
 Update to Unity 6.3.8f1.
