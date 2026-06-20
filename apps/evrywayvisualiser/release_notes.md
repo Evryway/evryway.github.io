@@ -6,6 +6,17 @@ permalink: /apps/evrywayvisualiser/release_notes
 
 [(back to Evryway Visualiser)](index)
 
+# 2.1.2 (20260620
+
+Bug fixes:
+Fixed various network issues, more error messages displayed and lockups fixed.
+Fixed device permissions issue that stopped reading Quest3 local audio files
+(thanks to Seung Won Baek for the report).
+Fixed various startup flow issues that caused hand detection instability.
+Fixed invalid audio from network providers from locking up playback.
+Update to Unity 6.3.16f1.
+
+
 # 2.1.1 (20260515)
 
 Passthrough mode now available in the device settings menu.
